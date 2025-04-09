@@ -1,35 +1,78 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lifetour</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lifetour</title>
+  <link rel="stylesheet" href="sass/style.scss" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+<body class="page-body">
+  <!-- пример использования спрайта
+
+    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт" />
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <header class="header" data-test="header">header</header>
-    
-    <main class="main">
-      <section class="hero" data-test="hero">hero</section>
-      <section class="tours" data-test="tours">tours</section>
-      <section class="training" data-test="training">training</section>
-      <section class="about" data-test="about">about</section>
-      <section class="reviews" data-test="reviews">reviews</section>
-      <section class="adv" data-test="adv">adv</section>
-      <section class="gallery" data-test="gallery">gallery</section>
-      <section class="form" data-test="form">form</section>
-    </main>
-    <footer class="footer" data-test="footer">footer</footer>
 
-    <script type="module" src="js/main.js"></script>
-  </body>
+    -->
+  <header class="header" data-test="header">
+    <nav class="header__nav">
+      <button class="header__burger-btn" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <span class="header__burger-btn-span"></span>
+      </button>
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#tours">Туры</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#training">Обучение</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#about">О нас</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#reviews">Отзывы</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#gallery">Фотографии</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="#contacts">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#" class="header__logo">
+          <svg class="header__logo-img" width="142" height="42">
+            <use href="/__spritemap#sprite-logotype"></use>
+          </svg>
+    </a>
+    <a class="header__phone" href="tel:+78000000000">8 800 000-00-00</a>
+  </header>
+
+  <main class="main">
+    <section class="hero" data-test="hero">hero</section>
+    <section class="tours" id="tours" data-test="tours">tours</section>
+    <section class="training" id="training" data-test="training">training</section>
+    <section class="about" id="about" data-test="about">about</section>
+    <section class="reviews" id="reviews" data-test="reviews">reviews</section>
+    <section class="adv" data-test="adv">adv</section>
+    <section class="gallery" id="gallery" data-test="gallery">gallery</section>
+    <section class="form" data-test="form">form</section>
+  </main>
+
+  <footer class="footer-container" data-test="footer">
+    <section class="contacts" id="contacts">contacts</section>
+    <section class="footer">contacts</section>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>
