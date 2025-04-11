@@ -7,9 +7,10 @@
   justify-content: flex-end;
   padding: 0.94em;
   background-color: $color-additional-1000;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
-    padding: 1.25em 2.81em 4.36em;
+    padding: 1.25em 2.81em;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -38,6 +39,7 @@
   height: 26px;
   border: none;
   background-color: transparent;
+  z-index: 11;
 
   @media (min-width: $tablet-width) {
     margin-top: 9px;
@@ -86,44 +88,69 @@
   }
 }
 
-.header__burger-btn--open {
+.header__nav:has([class*="header__nav-list--open"]) .header__burger-btn {
   &::before {
     transform: translate(7px, 0);
     opacity: 0;
   }
 }
 
-.header__burger-btn--open .header__burger-btn-span {
+.header__nav:has([class*="header__nav-list--open"]) .header__burger-btn-span {
   &::before {
     transform: rotate(135deg) translate(7px, -5px);
     width: 30px;
-    transition: transform 0.6s linear, width 0.6s linear;
+    transition: transform $trans-default, width $trans-default;
   }
 
   &::after {
     transform: rotate(-135deg) translate(7px, 4px);
     width: 30px;
-    transition: transform 0.6s linear, width 0.6s linear;
+    transition: transform $trans-default, width $trans-default;
   }
 }
 
 .header__nav-list {
-  visibility: hidden;
-  height: 0;
-  padding: 0;
+  position: absolute;
+  top: 112px;
+  left: 0px;
+  width: 100%;
   margin: 0;
+  padding: 0 0.94em 3.13em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
   gap: 0;
+  visibility: hidden;
+  background-color: #0266c1;
   list-style-type: none;
   line-height: 0;
   opacity: 0;
-  transition: height 0.6s ease-out, line-height 0.6s ease-out, gap 0.6s ease-out, opacity 0.3s ease-out, visibility 0.4s ease-out;
+  transition: line-height 0.4s ease-out, gap 0.4s ease-out,
+    opacity 0.4s ease-out, visibility 0.4s ease-out;
+
+    &::after {
+    content: "";
+    position: fixed;
+    top: 368px;
+    left: 0;
+    width: 100vw;
+    height: 77.2vh;
+    background: rgba(45, 56, 63, 0);
+    z-index: -10;
+    transition: background 0.2s ease-in;
+    transition-delay: 0.4s;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 2.81em 4.38em;
+    top: 85px;
+  }
 
   @media (min-width: $desktop-width) {
+    position: static;
     height: auto;
+    padding: 0;
     display: flex;
     visibility: visible;
     line-height: 1em;
@@ -131,14 +158,19 @@
     gap: 1.88em;
     opacity: 1;
   }
+}
 
-  &--open {
-    height: 16.2em;
-    visibility: visible;
-    line-height: 1em;
-    gap: 1.38em;
-    opacity: 1;
-    transition: height 0.6s ease-in, line-height 0.4s ease-in, gap 0.6s ease-in, opacity 1s ease-in, visibility 1s ease-in;
+.header__nav-list--open {
+  visibility: visible;
+  line-height: 1em;
+  gap: 1.38em;
+  z-index: 10;
+  opacity: 1;
+  transition: line-height 0.4s ease-in, gap 0.4s ease-in, opacity 0.4s ease-in,
+    visibility 0.4s ease-in;
+
+  &::after {
+    background: rgba(45, 56, 63, 0.6);
   }
 }
 
@@ -151,6 +183,11 @@
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1rem;
+  }
 }
 
 .header__logo {

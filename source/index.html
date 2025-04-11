@@ -22,6 +22,7 @@
 
     -->
   <header class="header" data-test="header">
+
     <nav class="header__nav">
       <button class="header__burger-btn" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -58,7 +59,111 @@
 
   <main class="main">
     <section class="hero" data-test="hero">
-      <h2 class="hero__title">Lifetour</h2>
+      <h2 class="visually-hidden">Популярные туры</h2>
+
+      <div class="swiper hero__swiper">
+        <ul class="swiper-wrapper hero__swiper-list">
+          <li class="swiper-slide hero__swiper-item">
+            <div class="hero__swiper-card hero__card hero__card--caucasus">
+              <div class="hero__card-description">
+                <h3 class="hero__card-title">Захватывающие вершины&nbsp;Кавказа</h3>
+                <p class="hero__card-text">В сопровождении опытных гидов вы&nbsp;пройдёте через&nbsp;потрясающие ландшафты
+                  и совершите восход на&nbsp;вершину горы Чегет.
+                </p>
+                <a class="hero__card-link" href="#">Смотреть тур</a>
+              </div>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="./img/hero/caucasus/сaucasus-desktop@1x.webp 1x, ./img/hero/caucasus/сaucasus-desktop@2x.webp 2x"
+                  width="1440" height="800">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/hero/caucasus/сaucasus-tablet@1x.webp 1x, ./img/hero/caucasus/сaucasus-tablet@2x.webp 2x"
+                  width="768" height="1034">
+                <source type="image/webp"
+                  srcset="./img/hero/caucasus/сaucasus-mobile@1x.webp 1x, ./img/hero/caucasus/сaucasus-mobile@2x.webp 2x"
+                  width="320" height="568" />
+
+                <source type="image/jpg" media="(min-width: 1440px)"
+                  srcset="./img/hero/caucasus/сaucasus-desktop@1x.jpg 1x, ./img/hero/caucasus/сaucasus-desktop@2x.jpg 2x"
+                  width="1440" height="800">
+                <source type="image/jpg" media="(min-width: 768px)"
+                  srcset="./img/hero/caucasus/сaucasus-tablet@1x.jpg 1x, ./img/hero/caucasus/сaucasus-tablet@2x.jpg 2x"
+                  width="768" height="1034">
+                <img class="hero__swiper-card-img" src="./img/hero/caucasus/сaucasus-mobile@1x.jpg"
+                  srcset="./img/hero/caucasus/сaucasus-mobile@2x.jpg 2x" width="320" height="568"
+                  alt="Захватывающие вершины Кавказа" />
+              </picture>
+            </div>
+          </li>
+          <li class="swiper-slide hero__swiper-item">
+            <div class="hero__swiper-card hero__card hero__card--kamchatka">
+              <div class="hero__card-description">
+                <h3 class="hero__card-title">Невероятная природа Камчатки</h3>
+                <p class="hero__card-text">Незабываемое приключение, во время которого вы отправитесь в путешествие
+                  по одному из самых нетронутых уголков дикой <br>природы в мире.
+                </p>
+                <a class="hero__card-link" href="#">Смотреть тур</a>
+              </div>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="./img/hero/kamchatka/kamchatka-desktop@1x.webp 1x, ./img/hero/kamchatka/kamchatka-desktop@2x.webp 2x"
+                  width="1440" height="800">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/hero/kamchatka/kamchatka-tablet@1x.webp 1x, ./img/hero/kamchatka/kamchatka-tablet@2x.webp 2x"
+                  width="768" height="1034">
+                <source type="image/webp"
+                  srcset="./img/hero/kamchatka/kamchatka-mobile@1x.webp 1x, ./img/hero/kamchatka/kamchatka-mobile@2x.webp 2x"
+                  width="320" height="568" />
+
+                <source type="image/jpg" media="(min-width: 1440px)"
+                  srcset="./img/hero/kamchatka/kamchatka-desktop@1x.jpg 1x, ./img/hero/kamchatka/kamchatka-desktop@2x.jpg 2x"
+                  width="1440" height="800">
+                <source type="image/jpg" media="(min-width: 768px)"
+                  srcset="./img/hero/kamchatka/kamchatka-tablet@1x.jpg 1x, ./img/hero/kamchatka/kamchatka-tablet@2x.jpg 2x"
+                  width="768" height="1034">
+                <img class="hero__swiper-card-img" src="./img/hero/kamchatka/kamchatka-mobile@1x.jpg"
+                  srcset="./img/hero/kamchatka/kamchatka-mobile@2x.jpg 2x" width="320" height="568"
+                  alt="Захватывающие вершины Камчатки" />
+              </picture>
+            </div>
+          </li>
+          <li class="swiper-slide hero__swiper-item">
+            <div class="hero__swiper-card hero__card hero__card--altai">
+              <div class="hero__card-description">
+                <h3 class="hero__card-title">Магические пейзажи Алтайского Края</h3>
+                <p class="hero__card-text">
+                  Алтайский трекинг-тур – это захватывающее приключение  с посещением магических  и захватывающих дух ландшафтов
+                  Алтайских гор.
+                </p>
+                <a class="hero__card-link" href="#">Смотреть тур</a>
+              </div>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="./img/hero/altai/altai-desktop@1x.webp 1x, ./img/hero/altai/altai-desktop@2x.webp 2x"
+                  width="1440" height="800">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/hero/altai/altai-tablet@1x.webp 1x, ./img/hero/altai/altai-tablet@2x.webp 2x"
+                  width="768" height="1034">
+                <source type="image/webp"
+                  srcset="./img/hero/altai/altai-mobile@1x.webp 1x, ./img/hero/altai/altai-mobile@2x.webp 2x"
+                  width="320" height="568" />
+
+                <source type="image/jpg" media="(min-width: 1440px)"
+                  srcset="./img/hero/altai/altai-desktop@1x.jpg 1x, ./img/hero/altai/altai-desktop@2x.jpg 2x"
+                  width="1440" height="800">
+                <source type="image/jpg" media="(min-width: 768px)"
+                  srcset="./img/hero/altai/altai-tablet@1x.jpg 1x, ./img/hero/altai/altai-tablet@2x.jpg 2x" width="768"
+                  height="1034">
+                <img class="hero__swiper-card-img" src="./img/hero/altai/altai-mobile@1x.jpg"
+                  srcset="./img/hero/altai/altai-mobile@2x.jpg 2x" width="320" height="568"
+                  alt="Захватывающие вершины Алтайского края" />
+              </picture>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination hero__swiper-pagination"></div>
+      </div>
+
     </section>
 
     <section class="tours" id="tours" data-test="tours">tours</section>

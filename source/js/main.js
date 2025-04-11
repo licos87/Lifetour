@@ -4,4 +4,7 @@
 // import 'swiper/css';
 
 //header
-import './modules/burger-toggle';
+import './modules/header-nav-heandler';
+
+//hero
+import './modules/hero-swiper';
