@@ -66,6 +66,7 @@
 
     &::after {
       content: "Средняя сложность";
+      left: 24.3em;
     }
   }
 }
@@ -82,22 +83,79 @@
   }
 }
 
+.hero__card--kamchatka .hero__card-description {
+  @media (min-width: $tablet-width) {
+    top: 282px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(100% + 46px);
+      left: calc(50% - 221px);
+      width: 266px;
+      height: 351px;
+      background: url("../../img/hero/kamchatka/photo-1@1x.png") no-repeat
+        center;
+      background-image: image-set(
+        url("../../img/hero/kamchatka/photo-1@1x.webp") type("image/webp") 1x,
+        url("../../img/hero/kamchatka/photo-1@2x.webp") type("image/webp") 2x,
+        url("../../img/hero/kamchatka/photo-1@1x.png") type("image/png") 1x,
+        url("../../img/hero/kamchatka/photo-1@2x.png") type("image/png") 2x
+      );
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(100% + 99px);
+      left: calc(50% - 15px);
+      width: 236px;
+      height: 312px;
+      background: url("../../img/hero/kamchatka/photo-2@1x.png") no-repeat
+        center;
+      background-image: image-set(
+        url("../../img/hero/kamchatka/photo-2@1x.webp") type("image/webp") 1x,
+        url("../../img/hero/kamchatka/photo-2@2x.webp") type("image/webp") 2x,
+        url("../../img/hero/kamchatka/photo-2@1x.png") type("image/png") 1x,
+        url("../../img/hero/kamchatka/photo-2@2x.png") type("image/png") 2x
+      );
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: calc(50% - 30px);
+
+    &::before {
+      width: 308px;
+      height: 407px;
+      background-size: 308px 407px;
+      top: calc(50% - 182px);
+      left: calc(100% - 154px);
+    }
+
+    &::after {
+      width: 277px;
+      height: 366px;
+      background-size: 277px 366px;
+      top: calc(50% - 89px);
+      left: calc(100% - 21px);
+    }
+  }
+}
+
 .hero__card-description {
   width: 18.13rem;
   position: absolute;
-  top: 144px;
-  left: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.94rem;
+  top: calc(50% - 9px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   color: $color-white-1000;
 
   @media (min-width: $tablet-width) {
+    top: calc(50% - 30px);
     width: 42.38rem;
-    top: 343px;
-    left: 45px;
+
     gap: 0.85rem;
 
     & br {
@@ -108,26 +166,30 @@
   @media (min-width: $desktop-width) {
     margin: 0 7.5em;
     width: 59rem;
-    align-items: flex-start;
-    top: 201px;
+    top: calc(50% - 30px);
     left: 0;
-    gap: 1.5rem;
+    transform: translate(0, -50%);
+    align-items: flex-start;
+    text-align: left;
   }
 }
 
 .hero__card-title {
-  margin: 0;
+  margin: 0 0 0.94rem;
   font-size: 1.63rem;
   font-weight: 800;
   line-height: 1em;
   text-align: center;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.3px;
 
   @media (min-width: $tablet-width) {
     font-size: 3.5rem;
+    transform: translateY(1px);
+    letter-spacing: 0.7px;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 1.56rem;
     font-size: 4.81rem;
     text-align: left;
     letter-spacing: 1px;
@@ -135,15 +197,14 @@
 }
 
 .hero__card-text {
-  margin: 0 0 3.1em;
+  margin: 0 0 3.75rem;
   font-size: 0.94rem;
   line-height: 1.33em;
   text-align: center;
-  letter-spacing: -0.01em;
 
   @media (min-width: $tablet-width) {
     max-width: 500px;
-    margin: 0 0 1.36em;
+    margin: 0 auto 2.19rem;
     font-size: 1.06rem;
     line-height: 1.41em;
     letter-spacing: 0;
@@ -152,20 +213,23 @@
   @media (min-width: $desktop-width) {
     max-width: 27.29em;
     text-align: left;
-    margin: 0 0 0.7em;
+    margin: 0 0 2.19rem;
   }
 }
 
 .hero__card-link {
-  padding: 1.25em 2.13em;
+  width: 180px;
+  height: 56px;
+  padding: 21px 20px 19px 20px;
   color: $color-white-1000;
-  text-decoration: none;
   font-size: 1rem;
   line-height: 1em;
   font-weight: 500;
   z-index: 10;
-  transform: translateY(-1px);
   background-color: $color-additional-1000;
+  border: none;
+  margin: 0 auto;
+  transform: translateY(0px);
 
   @media (min-width: $tablet-width) {
     transform: translateY(0);

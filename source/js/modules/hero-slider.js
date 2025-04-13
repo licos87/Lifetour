@@ -11,7 +11,6 @@ const heroSlider = new Swiper('.hero__swiper', {
   effect: 'fade',
   centeredSlides: true,
 
-
   fadeEffect: {
     crossFade: true,
   },
@@ -34,4 +33,4 @@ const heroSlider = new Swiper('.hero__swiper', {
   },
 });
 
-heroSlider.init();
+export default heroSlider;

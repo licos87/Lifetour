@@ -7,14 +7,17 @@
 @import "./global/utils";
 @import "./global/variables";
 @import "./global/reboot";
-
-// header
-@import "./blocks/header";
-// hero
 @import "swiper/css";
 @import "swiper/css/navigation";
 @import "swiper/css/pagination";
 @import "swiper/css/mousewheel";
 @import "swiper/css/effect-fade";
+
+// header
+@import "./blocks/header";
+// hero
 @import "./blocks/hero";
+// tours
+@import "./blocks/tours";
+@import "./blocks/tours-card";
 

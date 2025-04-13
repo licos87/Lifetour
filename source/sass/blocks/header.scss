@@ -129,7 +129,7 @@
   transition: line-height 0.4s ease-out, gap 0.4s ease-out,
     opacity 0.4s ease-out, visibility 0.4s ease-out;
 
-    &::after {
+  &::after {
     content: "";
     position: fixed;
     top: 368px;
@@ -145,6 +145,10 @@
   @media (min-width: $tablet-width) {
     padding: 0 2.81em 4.38em;
     top: 85px;
+
+    &::after {
+      top: 361px;
+    }
   }
 
   @media (min-width: $desktop-width) {

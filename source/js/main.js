@@ -5,6 +5,8 @@
 
 //header
 import './modules/header-nav-heandler';
-
 //hero
-import './modules/hero-swiper';
+import './modules/hero-slider';
+//tours
+import './modules/tours-slider';
+
