@@ -2,20 +2,20 @@
 <html lang="ru" data-validate="html">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lifetour</title>
-  <link rel="stylesheet" href="sass/style.scss" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
-  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="sass/style.scss">
+  <link rel="icon" href="./public/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
   <!-- пример использования спрайта
 
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт" />
+    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg>
@@ -58,20 +58,29 @@
   </header>
 
   <main class="main">
+    <h1 class="visually-hidden">Lifetour. Организация походов в горы.</h1>
     <section class="hero" data-test="hero">
       <h2 class="visually-hidden">Популярные туры</h2>
 
       <div class="swiper hero__swiper">
         <ul class="swiper-wrapper hero__swiper-list">
-          <li class="swiper-slide hero__swiper-item">
+          <li class="swiper-slide hero__swiper-item" tabindex="0">
             <div class="hero__swiper-card hero__card hero__card--caucasus">
-              <div class="hero__card-description">
-                <h3 class="hero__card-title">Захватывающие вершины&nbsp;Кавказа</h3>
-                <p class="hero__card-text">В сопровождении опытных гидов вы&nbsp;пройдёте через&nbsp;потрясающие
-                  ландшафты
-                  и совершите восход на&nbsp;вершину горы Чегет.
-                </p>
-                <button class="hero__card-link" href="#">Смотреть тур</button>
+              <div class="hero__card-container">
+                <div class="hero__card-description">
+                  <div class="hero__card-description-container">
+                    <h3 class="hero__card-title">Захватывающие вершины&nbsp;Кавказа</h3>
+                    <p class="hero__card-text">В сопровождении опытных гидов вы&nbsp;пройдёте через&nbsp;потрясающие
+                      ландшафты
+                      и совершите восход на&nbsp;вершину горы Чегет.
+                    </p>
+                    <a class="hero__card-link" href="#" tabindex="0">Смотреть тур</a>
+                  </div>
+                  <div class="hero__card-info">
+                    <span class="hero__card-time">6 дней/5 ночей</span>
+                    <span class="hero__card-difficulty">Высокая сложность</span>
+                  </div>
+                </div>
               </div>
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
@@ -82,7 +91,7 @@
                   width="768" height="1034">
                 <source type="image/webp"
                   srcset="./img/hero/caucasus/сaucasus-mobile@1x.webp 1x, ./img/hero/caucasus/сaucasus-mobile@2x.webp 2x"
-                  width="320" height="568" />
+                  width="320" height="568">
 
                 <source type="image/jpg" media="(min-width: 1440px)"
                   srcset="./img/hero/caucasus/сaucasus-desktop@1x.jpg 1x, ./img/hero/caucasus/сaucasus-desktop@2x.jpg 2x"
@@ -92,18 +101,27 @@
                   width="768" height="1034">
                 <img class="hero__swiper-card-img" src="./img/hero/caucasus/сaucasus-mobile@1x.jpg"
                   srcset="./img/hero/caucasus/сaucasus-mobile@2x.jpg 2x" width="320" height="568"
-                  alt="Захватывающие вершины Кавказа" />
+                  alt="Захватывающие вершины Кавказа">
               </picture>
             </div>
           </li>
-          <li class="swiper-slide hero__swiper-item">
+          <li class="swiper-slide hero__swiper-item" tabindex="0">
             <div class="hero__swiper-card hero__card hero__card--kamchatka">
-              <div class="hero__card-description">
-                <h3 class="hero__card-title">Невероятная природа Камчатки</h3>
-                <p class="hero__card-text">Незабываемое приключение, во время которого вы отправитесь в путешествие
-                  по одному из самых нетронутых уголков дикой <br>природы в мире.
-                </p>
-                <button class="hero__card-link" href="#">Смотреть тур</button>
+              <div class="hero__card-container">
+                <div class="hero__card-description">
+                  <div class="hero__card-description-container">
+                    <h3 class="hero__card-title">Захватывающие вершины&nbsp;Кавказа</h3>
+                    <p class="hero__card-text">В сопровождении опытных гидов вы&nbsp;пройдёте через&nbsp;потрясающие
+                      ландшафты
+                      и совершите восход на&nbsp;вершину горы Чегет.
+                    </p>
+                    <a class="hero__card-link" href="#" tabindex="0">Смотреть тур</a>
+                  </div>
+                  <div class="hero__card-info">
+                    <span class="hero__card-time">6 дней/5 ночей</span>
+                    <span class="hero__card-difficulty">Высокая сложность</span>
+                  </div>
+                </div>
               </div>
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
@@ -114,7 +132,7 @@
                   width="768" height="1034">
                 <source type="image/webp"
                   srcset="./img/hero/kamchatka/kamchatka-mobile@1x.webp 1x, ./img/hero/kamchatka/kamchatka-mobile@2x.webp 2x"
-                  width="320" height="568" />
+                  width="320" height="568">
 
                 <source type="image/jpg" media="(min-width: 1440px)"
                   srcset="./img/hero/kamchatka/kamchatka-desktop@1x.jpg 1x, ./img/hero/kamchatka/kamchatka-desktop@2x.jpg 2x"
@@ -124,20 +142,27 @@
                   width="768" height="1034">
                 <img class="hero__swiper-card-img" src="./img/hero/kamchatka/kamchatka-mobile@1x.jpg"
                   srcset="./img/hero/kamchatka/kamchatka-mobile@2x.jpg 2x" width="320" height="568"
-                  alt="Захватывающие вершины Камчатки" />
+                  alt="Захватывающие вершины Камчатки">
               </picture>
             </div>
           </li>
-          <li class="swiper-slide hero__swiper-item">
+          <li class="swiper-slide hero__swiper-item" tabindex="0">
             <div class="hero__swiper-card hero__card hero__card--altai">
-              <div class="hero__card-description">
-                <h3 class="hero__card-title">Магические пейзажи Алтайского Края</h3>
-                <p class="hero__card-text">
-                  Алтайский трекинг-тур – это захватывающее приключение  с посещением магических  и захватывающих
-                  дух ландшафтов
-                  Алтайских гор.
-                </p>
-                <button class="hero__card-link" href="#">Смотреть тур</button>
+              <div class="hero__card-container">
+                <div class="hero__card-description">
+                  <div class="hero__card-description-container">
+                    <h3 class="hero__card-title">Захватывающие вершины&nbsp;Кавказа</h3>
+                    <p class="hero__card-text">В сопровождении опытных гидов вы&nbsp;пройдёте через&nbsp;потрясающие
+                      ландшафты
+                      и совершите восход на&nbsp;вершину горы Чегет.
+                    </p>
+                    <a class="hero__card-link" href="#" tabindex="0">Смотреть тур</a>
+                  </div>
+                  <div class="hero__card-info">
+                    <span class="hero__card-time">6 дней/5 ночей</span>
+                    <span class="hero__card-difficulty">Высокая сложность</span>
+                  </div>
+                </div>
               </div>
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
@@ -148,7 +173,7 @@
                   width="768" height="1034">
                 <source type="image/webp"
                   srcset="./img/hero/altai/altai-mobile@1x.webp 1x, ./img/hero/altai/altai-mobile@2x.webp 2x"
-                  width="320" height="568" />
+                  width="320" height="568">
 
                 <source type="image/jpg" media="(min-width: 1440px)"
                   srcset="./img/hero/altai/altai-desktop@1x.jpg 1x, ./img/hero/altai/altai-desktop@2x.jpg 2x"
@@ -158,21 +183,21 @@
                   height="1034">
                 <img class="hero__swiper-card-img" src="./img/hero/altai/altai-mobile@1x.jpg"
                   srcset="./img/hero/altai/altai-mobile@2x.jpg 2x" width="320" height="568"
-                  alt="Захватывающие вершины Алтайского края" />
+                  alt="Захватывающие вершины Алтайского края">
               </picture>
             </div>
           </li>
+          <div class="swiper-pagination hero__swiper-pagination"></div>
         </ul>
-        <div class="swiper-pagination hero__swiper-pagination"></div>
       </div>
 
     </section>
 
     <section class="tours" id="tours" data-test="tours">
-      <h2 class="tours__title">Ближайшие туры</h2>
+      <h2 class="tours__title">Ближайшие туры</h2>
       <div class="tours__slider">
         <ul class="swiper-wrapper tours__slider-list">
-          <li class="swiper-slide tours__slider-item">
+          <li class="swiper-slide tours__slider-item" tabindex="0">
             <div class="tours__slider-card tours__card tours__card--1">
               <div class="tours__card-location">
                 <span class="tours__card-location-name">Кавказ</span>
@@ -186,19 +211,19 @@
                 <div class="tours__card-description-group">
                   <p class="tours__card-description-title">Сложность:</p>
                   <span class="tours__card-stars">
-                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
-                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
-                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
-                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
-                    <svg class="tours__card-star" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
                   </span>
@@ -214,7 +239,7 @@
               </div>
             </div>
           </li>
-          <li class="swiper-slide tours__slider-item">
+          <li class="swiper-slide tours__slider-item" tabindex="0">
             <div class="tours__slider-card tours__card tours__card--2">
               <div class="tours__card-location">
                 <span class="tours__card-location-name">Алтай</span>
@@ -228,19 +253,19 @@
                 <div class="tours__card-description-group">
                   <p class="tours__card-description-title">Сложность:</p>
                   <span class="tours__card-stars">
-                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
-                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
-                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
-                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
-                    <svg class="tours__card-star" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
                   </span>
@@ -256,7 +281,7 @@
               </div>
             </div>
           </li>
-          <li class="swiper-slide tours__slider-item">
+          <li class="swiper-slide tours__slider-item" tabindex="0">
             <div class="tours__slider-card tours__card tours__card--3">
               <div class="tours__card-location">
                 <span class="tours__card-location-name">Адыгея</span>
@@ -270,19 +295,19 @@
                 <div class="tours__card-description-group">
                   <p class="tours__card-description-title">Сложность:</p>
                   <span class="tours__card-stars">
-                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
-                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
-                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
-                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
-                    <svg class="tours__card-star " width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star " width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
                   </span>
@@ -298,7 +323,7 @@
               </div>
             </div>
           </li>
-          <li class="swiper-slide tours__slider-item">
+          <li class="swiper-slide tours__slider-item" tabindex="0">
             <div class="tours__slider-card tours__card tours__card--4">
               <div class="tours__card-location">
                 <span class="tours__card-location-name">Урал</span>
@@ -312,19 +337,19 @@
                 <div class="tours__card-description-group">
                   <p class="tours__card-description-title">Сложность:</p>
                   <span class="tours__card-stars">
-                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
-                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
-                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
-                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
-                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16" alt="Рейтинг">
+                    <svg class="tours__card-star tours__card-star-checked" width="16" height="16">
                       <use href="/__spritemap#sprite-star"></use>
                     </svg>
                   </span>
@@ -346,7 +371,141 @@
       </div>
     </section>
 
-    <section class="training" id="training" data-test="training">training</section>
+    <section class="training" id="training" data-test="training">
+      <h2 class="training__title">Наши инструкторы</h2>
+      <p class="training__description">
+        Обучение проводится квалифицированными специалистами,  за плечами которых десятки пройденных маршрутов Кавказа,
+        Крыма,
+        Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.
+      </p>
+      <div class="swiper training__slider">
+        <ul class="swiper-wrapper training__slider-list">
+          <li class="swiper-slide training__slider-item" tabindex="0">
+            <div class="training__card">
+              <picture>
+                <source type="image/webp"
+                  srcset="./img/instructor/alex-prokofev@1x.webp 1x, ./img/instructor/alex-prokofev@2x.webp 2x"
+                  width="260" height="200">
+                <img class="training__card-img" src="./img/instructor/alex-prokofev@1x.jpg"
+                  srcset="./img/instructor/alex-prokofev@2x.jpg 2x" width="260" height="200"
+                  alt="Инструктор Александр Прокофьев">
+              </picture>
+              <div class="training__card-title-wrapp">
+                <h3 class="training__card-title">Александр Прокофьев</h3>
+                <a class="training__card-link" href="https://vk.com/" target="_blank" tabindex="0">
+                  <svg class="training__card-icon" width="14" height="8">
+                    <use href="/__spritemap#sprite-social-vk"></use>
+                  </svg>
+                </a>
+              </div>
+              <p class="training__card-description">
+                Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.
+              </p>
+            </div>
+          </li>
+          <li class="swiper-slide training__slider-item" tabindex="0">
+            <div class="training__card">
+              <picture>
+                <source type="image/webp"
+                  srcset="./img/instructor/sveta-afinogenova@1x.webp 1x, ./img/instructor/sveta-afinogenova@2x.webp 2x"
+                  width="260" height="200">
+                <img class="training__card-img" src="./img/instructor/sveta-afinogenova@1x.jpg"
+                  srcset="./img/instructor/sveta-afinogenova@2x.jpg 2x" width="260" height="200"
+                  alt="Инструктор Светлана Афионогенова">
+              </picture>
+              <div class="training__card-title-wrapp">
+                <h3 class="training__card-title">Светлана Афионогенова</h3>
+                <a class="training__card-link" href="https://vk.com/" target="_blank" tabindex="0">
+                  <svg class="training__card-icon" width="14" height="8">
+                    <use href="/__spritemap#sprite-social-vk"></use>
+                  </svg>
+                </a>
+              </div>
+              <p class="training__card-description">
+                Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом
+                назначение
+                жизни.
+              </p>
+            </div>
+          </li>
+          <li class="swiper-slide training__slider-item" tabindex="0">
+            <div class="training__card">
+              <picture>
+                <source type="image/webp"
+                  srcset="./img/instructor/nadya-kolesnichenko@1x.webp 1x, ./img/instructor/nadya-kolesnichenko@2x.webp 2x"
+                  width="260" height="200">
+                <img class="training__card-img" src="./img/instructor/nadya-kolesnichenko@1x.jpg"
+                  srcset="./img/instructor/nadya-kolesnichenko@2x.jpg 2x" width="260" height="200"
+                  alt="Инструктор Надежда Колесниченко">
+              </picture>
+              <div class="training__card-title-wrapp">
+                <h3 class="training__card-title">Надежда Колесниченко</h3>
+                <a class="training__card-link" href="https://vk.com/" target="_blank" tabindex="0">
+                  <svg class="training__card-icon" width="14" height="8">
+                    <use href="/__spritemap#sprite-social-vk"></use>
+                  </svg>
+                </a>
+              </div>
+              <p class="training__card-description">
+                Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя
+                спокойно
+                и уверенно.
+              </p>
+            </div>
+          </li>
+          <li class="swiper-slide training__slider-item" tabindex="0">
+            <div class="training__card">
+              <picture>
+                <source type="image/webp"
+                  srcset="./img/instructor/fedor-kaigorodov@1x.webp 1x, ./img/instructor/fedor-kaigorodov@2x.webp 2x"
+                  width="260" height="200">
+                <img class="training__card-img" src="./img/instructor/fedor-kaigorodov@1x.jpg"
+                  srcset="./img/instructor/fedor-kaigorodov@2x.jpg 2x" width="260" height="200"
+                  alt="Инструктор Федор Кайгородов">
+              </picture>
+              <div class="training__card-title-wrapp">
+                <h3 class="training__card-title">Федор Кайгородов</h3>
+                <a class="training__card-link" href="https://vk.com/" target="_blank" tabindex="0">
+                  <svg class="training__card-icon" width="14" height="8">
+                    <use href="/__spritemap#sprite-social-vk"></use>
+                  </svg>
+                </a>
+              </div>
+              <p class="training__card-description">
+                Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
+                путешествует по Европе.
+              </p>
+            </div>
+          </li>
+          <li class="swiper-slide training__slider-item" tabindex="0">
+            <div class="training__card">
+              <picture>
+                <source type="image/webp"
+                  srcset="./img/instructor/daniel-vasnecov@1x.webp 1x, ./img/instructor/daniel-vasnecov@2x.webp 2x"
+                  width="260" height="200">
+                <img class="training__card-img" src="./img/instructor/daniel-vasnecov@2x.jpg"
+                  srcset="./img/instructor/daniel-vasnecov@2x.jpg 2x" width="260" height="200"
+                  alt="Инструктор Даниэль Васнецов">
+              </picture>
+              <div class="training__card-title-wrapp">
+                <h3 class="training__card-title">Даниэль Васнецов</h3>
+                <a class="training__card-link" href="https://vk.com/" target="_blank" tabindex="0">
+                  <svg class="training__card-icon" width="14" height="8">
+                    <use href="/__spritemap#sprite-social-vk"></use>
+                  </svg>
+                </a>
+              </div>
+              <p class="training__card-description">
+                Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.
+              </p>
+            </div>
+          </li>
+          <div class="swiper-button-prev training__slider-button-prev"></div>
+          <div class="swiper-button-next training__slider-button-next"></div>
+        </ul>
+      </div>
+    </section>
+
     <section class="about" id="about" data-test="about">about</section>
     <section class="reviews" id="reviews" data-test="reviews">reviews</section>
     <section class="adv" data-test="adv">adv</section>

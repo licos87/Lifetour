@@ -26,6 +26,14 @@ const heroSlider = new Swiper('.hero__swiper', {
     el: '.hero__swiper-pagination',
     type: 'bullets',
     clickable: true,
+    renderBullet: function (index, className) {
+      return `<button class="${className} hero__swiper-pagination-bullet" tabindex="0"></button>`;
+    },
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
   },
 
   mousewheel: {

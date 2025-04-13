@@ -9,4 +9,7 @@ import './modules/header-nav-heandler';
 import './modules/hero-slider';
 //tours
 import './modules/tours-slider';
+//training
+import './modules/training-slider';
+
 
