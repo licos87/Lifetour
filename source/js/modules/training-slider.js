@@ -23,14 +23,13 @@ const trainingSlider = new Swiper('.training__slider', {
       allowTouchMove: false,
     }
   },
-
+  navigation: {
+    nextEl: '.training__slider-button-next',
+    prevEl: '.training__slider-button-prev',
+    bulletElement: 'button',
+  },
   mousewheel: {
     forceToAxis: true,
-  },
-
-  navigation: {
-    nextEl: '.slider-button-button-next',
-    prevEl: '.slider-button-button-prev',
   },
 });
 

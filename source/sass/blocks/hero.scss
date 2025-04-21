@@ -19,14 +19,22 @@
   grid-template-rows: 1fr;
 }
 
-.hero__card--kamchatka .hero__card-description {
-  @media (min-width: $tablet-width) {
-    top: 282px;
+.hero__card-container {
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
 
+.hero__card--kamchatka .hero__card-container {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 137px 45px 342px;
     &::before {
       content: "";
       position: absolute;
-      top: calc(100% + 46px);
+      top: calc(50% - 45px);
       left: calc(50% - 221px);
       width: 266px;
       height: 351px;
@@ -43,7 +51,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: calc(100% + 99px);
+      top: calc(50% + 8px);
       left: calc(50% - 15px);
       width: 236px;
       height: 312px;
@@ -59,22 +67,23 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: calc(50% - 30px);
+    padding: 203px 120px 79px;
+    margin: 0 auto;
 
     &::before {
       width: 308px;
       height: 407px;
       background-size: 308px 407px;
-      top: calc(50% - 182px);
-      left: calc(100% - 154px);
+      top: calc(50% - 214px);
+      left: calc(50% + 190px);
     }
 
     &::after {
       width: 277px;
       height: 366px;
       background-size: 277px 366px;
-      top: calc(50% - 89px);
-      left: calc(100% - 21px);
+      top: calc(50% - 121px);
+      left: calc(50% + 323px);
     }
   }
 }
@@ -83,7 +92,15 @@
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   z-index: 10;
-  padding: 203px 120px 80px;
+  padding: 144px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 342px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 203px 120px 79px;
+  }
 }
 
 .hero__card-description {
@@ -124,13 +141,13 @@
   letter-spacing: 0.3px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 0.9rem;
     font-size: 3.5rem;
     letter-spacing: 0.7px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 1.4rem;
-    margin-top: calc((20 * 1vw) - 290px);
+    margin: 0 0 1.45rem;
     font-size: 4.81rem;
     text-align: left;
     letter-spacing: 1px;
@@ -145,7 +162,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 500px;
-    margin: 0 auto 2.19rem;
+    margin: 0 auto 2.24rem;
     font-size: 1.06rem;
     line-height: 1.41em;
     letter-spacing: 0;
@@ -154,7 +171,7 @@
   @media (min-width: $desktop-width) {
     max-width: 27.29em;
     text-align: left;
-    margin: 0 0 2.3rem;
+    margin: 0 0 2.25rem;
   }
 }
 
@@ -162,6 +179,7 @@
   display: block;
   width: 180px;
   height: 56px;
+  margin: 0 auto;
   padding: 21px 20px 19px 20px;
   text-align: center;
   font-size: 1rem;
@@ -178,13 +196,17 @@
 }
 
 .hero__card-info {
-  display: flex;
+  display: none;
   gap: 10px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .hero__card-time {
   @media (min-width: $desktop-width) {
-    padding: 1.15em 1.6em 1.17em 3.24em;
+    padding: 1.1em 1.6em 1.1em 3.24em;
     font-size: 0.75rem;
     line-height: 1.33em;
     color: $color-white-1000;
@@ -198,7 +220,7 @@
 
 .hero__card-difficulty {
   @media (min-width: $desktop-width) {
-    padding: 1.15em 1.67em 1.17em 3.28em;
+    padding: 1.1em 1.67em 1.1em 3.28em;
     font-size: 0.75rem;
     line-height: 1.33em;
     color: $color-white-1000;
@@ -221,7 +243,17 @@
   display: block;
   width: 100%;
   height: 100%;
+  max-height: 568px;
   object-fit: cover;
+  object-position: center bottom;
+
+  @media (min-width: $tablet-width) {
+    max-height: 1034px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-height: 800px;
+  }
 }
 
 .hero__swiper-button-next,
@@ -233,7 +265,7 @@
   }
 }
 
-.hero__swiper-pagination {
+.hero__swiper .hero__swiper-pagination {
   --swiper-pagination-bullet-width: 16px;
   --swiper-pagination-bullet-height: 16px;
   --swiper-pagination-bullet-horizontal-gap: 10px;
@@ -246,13 +278,13 @@
 
   @media (min-width: $desktop-width) {
     --swiper-pagination-bottom: 92px;
-    padding: 0 6.9rem 0 0;
     display: flex;
-    justify-content: right;
+    left: calc(50% + 490px);
+    width: fit-content;
   }
 }
 
-.hero__swiper .hero__swiper-pagination-bullet {
+.hero__swiper-pagination .swiper-pagination-bullet {
   border: 1px solid $color-white-1000;
 }
 

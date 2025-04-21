@@ -1,0 +1,82 @@
+.about {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+
+  
+}
+
+.about__background {
+  height: 400px;
+  width: 100%;
+  background: url("../../img/about/turists-mobile@1x.png") no-repeat left /
+    cover;
+  background-image: image-set(
+    url("../../img/about/turists-mobile@1x.webp") type("image/webp") 1x,
+    url("../../img/about/turists-mobile@2x.webp") type("image/webp") 2x,
+    url("../../img/about/turists-mobile@1x.png") type("image/png") 1x,
+    url("../../img/about/turists-mobile2x.png") type("image/png") 2x
+  );
+
+  @media (min-width: $tablet-width) {
+    width: 542px;
+    height: 350px;
+
+    background: url("../../img/about/turists-tablet@1x.png") no-repeat left /
+      cover;
+    background-image: image-set(
+      url("../../img/about/turists-tablet@1x.webp") type("image/webp") 1x,
+      url("../../img/about/turists-tablet@2x.webp") type("image/webp") 2x,
+      url("../../img/about/turists-tablet@1x.png") type("image/png") 1x,
+      url("../../img/about/turists-tablet.png") type("image/png") 2x
+    );
+  }
+}
+
+.about__wrapper {
+  padding: 0 15px;
+}
+
+.about__title {
+  position: relative;
+  font-size: 1.38rem;
+  line-height: 1em;
+  font-weight: 800;
+  margin: 0 0 2.63rem;
+}
+
+.about__title::after {
+  content: "О нас";
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  font-size: 1.63rem;
+  line-height: 1em;
+  font-weight: 800;
+  opacity: 0.03;
+
+  @media (min-width: $tablet-width) {
+    bottom: -3px;
+    left: 0;
+    font-size: 3.44rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -3px;
+    left: 0;
+    font-size: 3.44rem;
+  }
+}
+
+.about__subtitle {
+  font-size: 1rem;
+  line-height: 1em;
+  font-weight: 700;
+  margin: 0 0 0.94em;
+}
+
+.about__text {
+  font-size: 0.88rem;
+  line-height: 1.43em;
+  margin: 0 0 1.79em;
+}

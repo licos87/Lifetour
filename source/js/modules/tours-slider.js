@@ -28,6 +28,7 @@ const toursSlider = new Swiper('.tours__slider', {
   navigation: {
     nextEl: '.tours__slider-button-next',
     prevEl: '.tours__slider-button-prev',
+    bulletElement: 'button',
   },
 });
 

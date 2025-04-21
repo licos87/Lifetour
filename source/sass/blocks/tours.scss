@@ -3,6 +3,9 @@
   padding: 36px 15px 20px;
   max-width: 320px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     padding: 60px 45px 40px;
@@ -16,11 +19,14 @@
 }
 
 .tours__title {
+  align-self: flex-start;
   position: relative;
-  margin: 0 0 25px;
+  width: 100%;
+  margin: 0 0 39px;
   font-size: 1.38rem;
   line-height: 1em;
   font-weight: 800;
+  letter-spacing: 0.3px;
 
   @media (min-width: $tablet-width) {
     font-size: 1.56rem;
@@ -57,7 +63,7 @@
 
 .tours__slider {
   width: 290px;
-  margin: 0 auto;
+  margin: 0 auto 1.56em;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
@@ -75,17 +81,21 @@
   list-style-type: none;
 }
 
-.tours__slider-button-prev {
+.tours__slider-button {
   display: none;
   top: 60px;
-  left: calc(100% - 123px);
   width: 37px;
   height: 35px;
   background-color: $color-additional-1000;
+  border: none;
 
-  @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
     display: block;
   }
+}
+
+.tours__slider-button-prev {
+  left: calc(100% - 123px);
 
   @media (min-width: $desktop-width) {
     left: calc(100% - 198px);
@@ -106,16 +116,7 @@
 }
 
 .tours__slider-button-next {
-  display: none;
-  width: 37px;
-  height: 35px;
-  top: 60px;
   left: calc(100% - 82px);
-  background-color: $color-additional-1000;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
 
   @media (min-width: $desktop-width) {
     left: calc(100% - 157px);
@@ -138,4 +139,18 @@
 .tours__slider-button-prev.swiper-button-disabled {
   background-color: $color-disabled;
   opacity: 1;
+}
+
+.tours__show-btn {
+  display: inline-flex;
+  gap: 0.82em;
+  padding: 0.71em;
+  margin: 0 auto;
+  font-size: 0.88rem;
+  line-height: 1em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: translateX(1px);
 }

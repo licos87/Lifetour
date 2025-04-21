@@ -22,13 +22,23 @@ const heroSlider = new Swiper('.hero__swiper', {
     }
   },
 
+  on: {
+    slideChange: function () {
+      this.slides.forEach((slide, index) => {
+        const isActive = index === this.activeIndex;
+        slide.querySelectorAll('a, button, input, textarea, select, [tabindex]')
+          .forEach((el) => {
+            el.tabIndex = isActive ? 0 : -1;
+          });
+      });
+    },
+  },
+
   pagination: {
     el: '.hero__swiper-pagination',
     type: 'bullets',
     clickable: true,
-    renderBullet: function (index, className) {
-      return `<button class="${className} hero__swiper-pagination-bullet" tabindex="0"></button>`;
-    },
+    bulletElement: 'button',
   },
 
   keyboard: {
