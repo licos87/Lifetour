@@ -286,6 +286,8 @@
 
 .hero__swiper-pagination .swiper-pagination-bullet {
   border: 1px solid $color-white-1000;
+  opacity: 1;
+  background: transparent;
 }
 
 .hero__swiper-pagination .swiper-pagination-bullet-active {

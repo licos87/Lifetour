@@ -1,12 +1,16 @@
 .training {
+  width: 320px;
+  margin: 0 auto;
   padding: 36px 15px 20px;
   position: relative;
 
   @media (min-width: $tablet-width) {
+    width: $tablet-width;
     padding: 60px 45px;
   }
 
   @media (min-width: $desktop-width) {
+    width: $desktop-width;
     padding: 63px 120px;
   }
 }
