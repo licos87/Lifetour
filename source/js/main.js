@@ -13,4 +13,8 @@ import './modules/tours-slider';
 import './modules/training-slider';
 // rewiews
 import './modules/reviews-slider';
-
+// adv
+import './modules/adv-clone-sliders';
+import './modules/adv-slider';
+// gallery
+import './modules/gallery-slider';

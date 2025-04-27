@@ -10,6 +10,8 @@ const trainingSlider = new Swiper('.training__slider', {
   initialSlide: 2,
   spaceBetween: 20,
   centeredSlides: false,
+  loop: true,
+  loopAdditionalSlides: 2,
 
   breakpoints: {
     768: {
@@ -21,6 +23,7 @@ const trainingSlider = new Swiper('.training__slider', {
       slidesPerView: 4,
       initialSlide: 0,
       allowTouchMove: false,
+      slidesPerGroup: 2,
     }
   },
   navigation: {
