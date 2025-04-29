@@ -899,7 +899,7 @@
       <div class="gallery__description">
         <h2 class="gallery__title">Фотогалерея</h2>
         <p class="gallery__text">
-          Добавляйте фото с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел
+          Добавляйте фото с хэштегом #лайфтур,<br> а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел
           нашего
           сайта.
         </p>
@@ -908,70 +908,159 @@
         <ul class="gallery__slider-list swiper-wrapper">
           <li class="gallery__slider-item swiper-slide">
             <picture>
-              <source type="image/webp" srcset="./img/gallery/slide-1@1x.webp 1x, ./img/gallery/slide-1@2x.webp 2x"
-                width="418" height="269">
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="./img/gallery/slide-1-desktop@1x.webp 1x, ./img/gallery/slide-1-desktop@2x.webp 2x" width="284"
+                height="463">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/gallery/slide-1-tablet@1x.webp 1x, ./img/gallery/slide-1-tablet@2x.webp 2x" width="253"
+                height="418">
+              <source type="image/webp"
+                srcset="./img/gallery/slide-1-mobile@1x.webp 1x, ./img/gallery/slide-1-mobile@2x.webp 2x" width="158"
+                height="266">
 
-              <img class="gallery__slider-img" src="./img/gallery/slide-1@1x.jpg"
-                srcset="./img/gallery/slide-1@2x.jpg 2x" width="418" height="269" alt="На фоне гор" loading="lazy">
-            </picture>
-          </li>
-          <li class="gallery__slider-item swiper-slide">
-            <picture>
-              <source type="image/webp" srcset="./img/gallery/slide-2@1x.webp 1x, ./img/gallery/slide-2@2x.webp 2x"
-                width="204" height="149">
-
-              <img class="gallery__slider-img" src="./img/gallery/slide-2@1x.jpg"
-                srcset="./img/gallery/slide-2@2x.jpg 2x" width="204" height="149" alt="Туристы у костра" loading="lazy">
-            </picture>
-          </li>
-          <li class="gallery__slider-item swiper-slide">
-            <picture>
-              <source type="image/webp" srcset="./img/gallery/slide-3@1x.webp 1x, ./img/gallery/slide-3@2x.webp 2x"
-                width="351" height="223">
-
-              <img class="gallery__slider-img" src="./img/gallery/slide-3@1x.jpg"
-                srcset="./img/gallery/slide-3@2x.jpg 2x" width="351" height="223" alt="Без компаса, никуда"
+              <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="./img/gallery/slide-1-desktop@1x.webp 1x, ./img/gallery/slide-1-desktop@2x.webp 2x" width="284"
+                height="463">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="./img/gallery/slide-1-tablet@1x.webp 1x, ./img/gallery/slide-1-tablet@2x.webp 2x" width="253"
+                height="418">
+              <img class="gallery__slider-img" src="./img/gallery/slide-1-mobile@1x.jpg"
+                srcset="./img/gallery/slide-1-mobile@2x.jpg 2x" width="158" height="266" alt="На фоне гор"
                 loading="lazy">
             </picture>
           </li>
           <li class="gallery__slider-item swiper-slide">
-            <picture>
-              <source type="image/webp" srcset="./img/gallery/slide-4@1x.webp 1x, ./img/gallery/slide-4@2x.webp 2x"
-                width="468" height="464">
+            <div class="gallery__slider-img-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="./img/gallery/slide-2-desktop@1x.webp 1x, ./img/gallery/slide-2-desktop@2x.webp 2x"
+                  width="284" height="233">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/gallery/slide-2-tablet@1x.webp 1x, ./img/gallery/slide-2-tablet@2x.webp 2x" width="252"
+                  height="209">
+                <source type="image/webp"
+                  srcset="./img/gallery/slide-2-mobile@1x.webp 1x, ./img/gallery/slide-2-mobile@2x.webp 2x" width="157"
+                  height="134">
 
-              <img class="gallery__slider-img" src="./img/gallery/slide-4@1x.jpg"
-                srcset="./img/gallery/slide-4@2x.jpg 2x" width="468" height="464" alt="Туристы на горной тропе"
+                <source type="image/jpg" media="(min-width: 1440px)"
+                  srcset="./img/gallery/slide-2-desktop@1x.webp 1x, ./img/gallery/slide-2-desktop@2x.webp 2x"
+                  width="284" height="233">
+                <source type="image/jpg" media="(min-width: 768px)"
+                  srcset="./img/gallery/slide-2-tablet@1x.webp 1x, ./img/gallery/slide-2-tablet@2x.webp 2x" width="253"
+                  height="209">
+                <img class="gallery__slider-img" src="./img/gallery/slide-2-mobile@1x.jpg"
+                  srcset="./img/gallery/slide-2-mobile@2x.jpg 2x" width="157" height="134" alt="Туристы у костра"
+                  loading="lazy">
+              </picture>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="./img/gallery/slide-3-desktop@1x.webp 1x, ./img/gallery/slide-3-desktop@2x.webp 2x"
+                  width="284" height="223">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/gallery/slide-3-tablet@1x.webp 1x, ./img/gallery/slide-3-tablet@2x.webp 2x" width="252"
+                  height="209">
+                <source type="image/webp"
+                  srcset="./img/gallery/slide-3-mobile@1x.webp 1x, ./img/gallery/slide-3-mobile@2x.webp 2x" width="157"
+                  height="124">
+
+                <source type="image/jpg" media="(min-width: 1440px)"
+                  srcset="./img/gallery/slide-3-desktop@1x.webp 1x, ./img/gallery/slide-3-desktop@2x.webp 2x"
+                  width="284" height="223">
+                <source type="image/jpg" media="(min-width: 768px)"
+                  srcset="./img/gallery/slide-3-tablet@1x.webp 1x, ./img/gallery/slide-3-tablet@2x.webp 2x" width="252"
+                  height="209">
+                <img class="gallery__slider-img" src="./img/gallery/slide-3-mobile@1x.jpg"
+                  srcset="./img/gallery/slide-3-mobile@2x.jpg 2x" width="157" height="124" alt="Туристы у костра"
+                  loading="lazy">
+              </picture>
+            </div>
+          </li>
+          <li class="gallery__slider-item swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="./img/gallery/slide-4-desktop@1x.webp 1x, ./img/gallery/slide-4-desktop@2x.webp 2x" width="284"
+                height="463">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/gallery/slide-4-tablet@1x.webp 1x, ./img/gallery/slide-4-tablet@2x.webp 2x" width="253"
+                height="418">
+              <source type="image/webp"
+                srcset="./img/gallery/slide-4-tablet@1x.webp 1x, ./img/gallery/slide-4-tablet@2x.webp 2x" width="158"
+                height="266">
+
+              <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="./img/gallery/slide-4-desktop@1x.webp 1x, ./img/gallery/slide-4-desktop@2x.webp 2x" width="284"
+                height="463">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="./img/gallery/slide-4-tablet@1x.webp 1x, ./img/gallery/slide-4-tablet@2x.webp 2x" width="253"
+                height="418">
+              <img class="gallery__slider-img" src="./img/gallery/slide-4-tablet@1x.jpg"
+                srcset="./img/gallery/slide-4-tablet@2x.jpg 2x" width="158" height="266" alt="На фоне гор"
                 loading="lazy">
             </picture>
           </li>
           <li class="gallery__slider-item swiper-slide">
-            <picture>
-              <source type="image/webp" srcset="./img/gallery/slide-5@1x.webp 1x, ./img/gallery/slide-5@2x.webp 2x"
-                width="345" height="234">
+            <div class="gallery__slider-img-wrapper gallery__slider-img-wrapper--2">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="./img/gallery/slide-5-desktop@1x.webp 1x, ./img/gallery/slide-5-desktop@2x.webp 2x"
+                  width="284" height="233">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/gallery/slide-5-desktop@1x.webp 1x, ./img/gallery/slide-5-desktop@2x.webp 2x" width="252"
+                  height="209">
+                <source type="image/webp"
+                  srcset="./img/gallery/slide-5-desktop@1x.webp 1x, ./img/gallery/slide-5-desktop@2x.webp 2x" width="157"
+                  height="134">
 
-              <img class="gallery__slider-img" src="./img/gallery/slide-5@1x.jpg"
-                srcset="./img/gallery/slide-5@2x.jpg 2x" width="345" height="234" alt="Туристы на леднике"
-                loading="lazy">
-            </picture>
+                <source type="image/jpg" media="(min-width: 1440px)"
+                  srcset="./img/gallery/slide-5-desktop@1x.webp 1x, ./img/gallery/slide-5-desktop@2x.webp 2x"
+                  width="284" height="233">
+                <source type="image/jpg" media="(min-width: 768px)"
+                  srcset="./img/gallery/slide-5-desktop@1x.webp 1x, ./img/gallery/slide-5-desktop@2x.webp 2x" width="253"
+                  height="209">
+                <img class="gallery__slider-img" src="./img/gallery/slide-5-desktop@1x.jpg"
+                  srcset="./img/gallery/slide-5-desktop@2x.jpg 2x" width="157" height="134" alt="Туристы на леднике"
+                  loading="lazy">
+              </picture>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="./img/gallery/slide-6-desktop@1x.webp 1x, ./img/gallery/slide-6-desktop@2x.webp 2x"
+                  width="284" height="223">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/gallery/slide-6-desktop@1x.webp 1x, ./img/gallery/slide-6-desktop@2x.webp 2x" width="252"
+                  height="209">
+                <source type="image/webp"
+                  srcset="./img/gallery/slide-6-desktop@1x.webp 1x, ./img/gallery/slide-6-desktop@2x.webp 2x" width="157"
+                  height="124">
+
+                <source type="image/jpg" media="(min-width: 1440px)"
+                  srcset="./img/gallery/slide-6-desktop@1x.webp 1x, ./img/gallery/slide-6-desktop@2x.webp 2x"
+                  width="284" height="223">
+                <source type="image/jpg" media="(min-width: 768px)"
+                  srcset="./img/gallery/slide-6-desktop@1x.webp 1x, ./img/gallery/slide-6-desktop@2x.webp 2x" width="252"
+                  height="209">
+                <img class="gallery__slider-img" src="./img/gallery/slide-6-desktop@1x.jpg"
+                  srcset="./img/gallery/slide-6-desktop@2x.jpg 2x" width="157" height="125" alt="Палатка на фоне звездного неба"
+                  loading="lazy">
+              </picture>
+            </div>
           </li>
           <li class="gallery__slider-item swiper-slide">
             <picture>
-              <source type="image/webp" srcset="./img/gallery/slide-6@1x.webp 1x, ./img/gallery/slide-6@2x.webp 2x"
-                width="333" height="224">
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="./img/gallery/slide-7-desktop@1x.webp 1x, ./img/gallery/slide-7-desktop@2x.webp 2x" width="284"
+                height="463">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/gallery/slide-7-desktop@1x.webp 1x, ./img/gallery/slide-7-desktop@2x.webp 2x" width="253" height="418">
+              <source type="image/webp" srcset="./img/gallery/slide-7-desktop@1x.webp 1x, ./img/gallery/slide-7-desktop@2x.webp 2x"
+                width="158" height="266">
 
-              <img class="gallery__slider-img" src="./img/gallery/slide-6@1x.jpg"
-                srcset="./img/gallery/slide-6@2x.jpg 2x" width="333" height="224"
-                alt="Одинокая палатка на фоне звездного неба" loading="lazy">
-            </picture>
-          </li>
-          <li class="gallery__slider-item swiper-slide">
-            <picture>
-              <source type="image/webp" srcset="./img/gallery/slide-7@1x.webp 1x, ./img/gallery/slide-7@2x.webp 2x"
-                width="418" height="269">
-
-              <img class="gallery__slider-img" src="./img/gallery/slide-7@1x.jpg"
-                srcset="./img/gallery/slide-7@2x.jpg 2x" width="694" height="464" alt="Паша и Коля разводят костёр"
-                loading="lazy">
+              <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="./img/gallery/slide-7-desktop@1x.webp 1x, ./img/gallery/slide-7-desktop@2x.webp 2x" width="284"
+                height="463">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="./img/gallery/slide-7-desktop@1x.webp 1x, ./img/gallery/slide-7-desktop@2x.webp 2x" width="253" height="418">
+              <img class="gallery__slider-img" src="./img/gallery/slide-7-desktop@1x.jpg"
+                srcset="./img/gallery/slide-7-desktop@2x.jpg 2x" width="158" height="266" alt="Коля и Петя разжигают костер" loading="lazy">
             </picture>
           </li>
         </ul>
@@ -980,7 +1069,9 @@
       </div>
     </section>
 
-    <section class="form" data-test="form">form</section>
+    <section class="form" data-test="form">
+      
+    </section>
   </main>
 
   <footer class="footer-container" data-test="footer">

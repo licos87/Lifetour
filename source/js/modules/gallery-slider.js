@@ -7,17 +7,19 @@ const sliderSettings = {
   modules: [Navigation],
   direction: 'horizontal',
   grabCursor: true,
-  spaceBetween: 2,
+  spaceBetween: 5,
   loop: true,
   speed: 800,
   loopAdditionalSlides: true,
   loopAddBlankSlides: false,
+  slidesPerView: 2,
 
-  slidesPerView: 'auto',
-  // grid: {
-  //   fill: 'columns',
-  //   rows: 2,
-  // },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+  },
+
 
   navigation: {
     nextEl: '.gallery__slider-button-next',
