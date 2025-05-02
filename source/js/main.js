@@ -18,3 +18,5 @@ import './modules/adv-clone-sliders';
 import './modules/adv-slider';
 // gallery
 import './modules/gallery-slider';
+// form
+import './modules/validate-form';
