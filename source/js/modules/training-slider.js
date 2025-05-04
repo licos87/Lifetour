@@ -10,7 +10,6 @@ const trainingSlider = new Swiper('.training__slider', {
   initialSlide: 2,
   spaceBetween: 20,
   centeredSlides: false,
-  loop: true,
   loopAdditionalSlides: 2,
 
   breakpoints: {

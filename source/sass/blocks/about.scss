@@ -63,7 +63,7 @@
   }
 }
 
-.about__title {
+.about__wrapper h2 {
   position: relative;
   font-size: 1.38rem;
   line-height: 1em;
@@ -81,7 +81,7 @@
   }
 }
 
-.about__title::after {
+.about__wrapper h2::after {
   content: "О нас";
   position: absolute;
   bottom: 11px;
@@ -104,7 +104,7 @@
   }
 }
 
-.about__subtitle {
+.about__wrapper h3 {
   font-size: 1rem;
   line-height: 1em;
   font-weight: 700;
@@ -121,7 +121,7 @@
   }
 }
 
-.about__text {
+.about__wrapper p {
   font-size: 14px;
   line-height: 1.43em;
   margin: 0 0 1.9em;
@@ -140,7 +140,7 @@
   }
 }
 
-.about__text br {
+.about__wrapper p br {
   display: none;
 
   @media (min-width: $desktop-width) {

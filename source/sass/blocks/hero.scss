@@ -19,13 +19,6 @@
   grid-template-rows: 1fr;
 }
 
-.hero__card-container {
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-    margin: 0 auto;
-  }
-}
-
 .hero__card--kamchatka .hero__card-container {
   position: relative;
 
@@ -92,14 +85,16 @@
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   z-index: 10;
-  padding: 144px 15px;
+  padding: 144px 15px 115px;
 
   @media (min-width: $tablet-width) {
     padding: 342px 45px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 203px 120px 79px;
+    padding: 200px 120px 80px;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -132,7 +127,7 @@
   }
 }
 
-.hero__card-title {
+.hero__card-description-container h3 {
   margin: 0 0 0.94rem;
   font-size: 1.63rem;
   font-weight: 800;
@@ -147,14 +142,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 1.45rem;
-    font-size: 4.81rem;
+    margin: 0 0 1.49rem;
+    font-size: 77px;
     text-align: left;
     letter-spacing: 1px;
   }
 }
 
-.hero__card-text {
+.hero__card-description-container p {
   margin: 0 0 3.75rem;
   font-size: 0.94rem;
   line-height: 1.33em;
