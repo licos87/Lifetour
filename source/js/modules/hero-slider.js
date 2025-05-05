@@ -19,6 +19,7 @@ const heroSlider = new Swiper('.hero__swiper', {
     1440: {
       slidesPerView: 1,
       allowTouchMove: false,
+      grabCursor: false,
     }
   },
 

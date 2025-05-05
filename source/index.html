@@ -2,25 +2,27 @@
 <html lang="ru" data-validate="html">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lifetour. Организация походов в горы.">
   <title>Lifetour</title>
-  <link rel="stylesheet" href="sass/style.scss" />
-  <link rel="icon" href="./public/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
-  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="sass/style.scss">
+  <link rel="icon" href="./public/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./img/favicons/favicon.png" type="image/png">
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
 
   <header class="header" data-test="header">
     <div class="header__container">
-      <button class="header__burger-btn" type="button" tabindex="1">
+      <button class="header__burger-btn" type="button" tabindex="0">
         <span class="visually-hidden">Открыть меню</span>
         <span class="header__burger-btn-span"></span>
       </button>
-      <a href="#" class="header__logo" tabindex="1">
+      <a class="header__logo" href="#" tabindex="0" aria-label="Логотип">
         <svg class="header__logo-img" width="142" height="42">
           <use href="/__spritemap#sprite-logotype"></use>
         </svg>
@@ -28,26 +30,27 @@
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#tours" tabindex="1">Туры</a>
+            <a class="header__nav-link" href="#tours" tabindex="0">Туры</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#training" tabindex="1">Обучение</a>
+            <a class="header__nav-link" href="#training" tabindex="0">Обучение</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#about" tabindex="1">О нас</a>
+            <a class="header__nav-link" href="#about" tabindex="0">О нас</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#reviews" tabindex="1">Отзывы</a>
+            <a class="header__nav-link" href="#reviews" tabindex="0">Отзывы</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#gallery" tabindex="1">Фотографии</a>
+            <a class="header__nav-link" href="#gallery" tabindex="0">Фотографии</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#contacts" tabindex="1">Контакты</a>
+            <a class="header__nav-link" href="#contacts" tabindex="0">Контакты</a>
           </li>
         </ul>
       </nav>
-      <a class="header__phone" href="tel:+78000000000" tabindex="1">8 800 000-00-00</a>
+      <a class="header__phone" href="tel:+78000000000" tabindex="0"
+        aria-label="Позвоните нам по телефону 8 800 000-00-00">8 800 000-00-00</a>
     </div>
   </header>
 
@@ -83,27 +86,27 @@
                 <source type="image/webp" media="(min-width: 1440px)" srcset="
                       ./img/hero/caucasus/сaucasus-desktop@1x.webp 1x,
                       ./img/hero/caucasus/сaucasus-desktop@2x.webp 2x
-                    " width="1440" height="800" />
+                    " width="1440" height="800">
                 <source type="image/webp" media="(min-width: 768px)" srcset="
                       ./img/hero/caucasus/сaucasus-tablet@1x.webp 1x,
                       ./img/hero/caucasus/сaucasus-tablet@2x.webp 2x
-                    " width="768" height="1034" />
+                    " width="768" height="1034">
                 <source type="image/webp" srcset="
                       ./img/hero/caucasus/сaucasus-mobile@1x.webp 1x,
                       ./img/hero/caucasus/сaucasus-mobile@2x.webp 2x
-                    " width="320" height="568" />
+                    " width="320" height="568">
 
                 <source type="image/jpg" media="(min-width: 1440px)" srcset="
                       ./img/hero/caucasus/сaucasus-desktop@1x.jpg 1x,
                       ./img/hero/caucasus/сaucasus-desktop@2x.jpg 2x
-                    " width="1440" height="800" />
+                    " width="1440" height="800">
                 <source type="image/jpg" media="(min-width: 768px)" srcset="
                       ./img/hero/caucasus/сaucasus-tablet@1x.jpg 1x,
                       ./img/hero/caucasus/сaucasus-tablet@2x.jpg 2x
-                    " width="768" height="1034" />
+                    " width="768" height="1034">
                 <img class="hero__swiper-card-img" src="./img/hero/caucasus/сaucasus-mobile@1x.jpg"
                   srcset="./img/hero/caucasus/сaucasus-mobile@2x.jpg 2x" width="320" height="568"
-                  alt="Захватывающие вершины Кавказа" />
+                  alt="Захватывающие вершины Кавказа">
               </picture>
             </div>
           </li>
@@ -132,27 +135,27 @@
                 <source type="image/webp" media="(min-width: 1440px)" srcset="
                       ./img/hero/kamchatka/kamchatka-desktop@1x.webp 1x,
                       ./img/hero/kamchatka/kamchatka-desktop@2x.webp 2x
-                    " width="1440" height="800" />
+                    " width="1440" height="800">
                 <source type="image/webp" media="(min-width: 768px)" srcset="
                       ./img/hero/kamchatka/kamchatka-tablet@1x.webp 1x,
                       ./img/hero/kamchatka/kamchatka-tablet@2x.webp 2x
-                    " width="768" height="1034" />
+                    " width="768" height="1034">
                 <source type="image/webp" srcset="
                       ./img/hero/kamchatka/kamchatka-mobile@1x.webp 1x,
                       ./img/hero/kamchatka/kamchatka-mobile@2x.webp 2x
-                    " width="320" height="568" />
+                    " width="320" height="568">
 
                 <source type="image/jpg" media="(min-width: 1440px)" srcset="
                       ./img/hero/kamchatka/kamchatka-desktop@1x.jpg 1x,
                       ./img/hero/kamchatka/kamchatka-desktop@2x.jpg 2x
-                    " width="1440" height="800" />
+                    " width="1440" height="800">
                 <source type="image/jpg" media="(min-width: 768px)" srcset="
                       ./img/hero/kamchatka/kamchatka-tablet@1x.jpg 1x,
                       ./img/hero/kamchatka/kamchatka-tablet@2x.jpg 2x
-                    " width="768" height="1034" />
+                    " width="768" height="1034">
                 <img class="hero__swiper-card-img" src="./img/hero/kamchatka/kamchatka-mobile@1x.jpg"
                   srcset="./img/hero/kamchatka/kamchatka-mobile@2x.jpg 2x" width="320" height="568" loading="lazy"
-                  alt="Захватывающие вершины Камчатки" />
+                  alt="Захватывающие вершины Камчатки">
               </picture>
             </div>
           </li>
@@ -181,27 +184,27 @@
                 <source type="image/webp" media="(min-width: 1440px)" srcset="
                       ./img/hero/altai/altai-desktop@1x.webp 1x,
                       ./img/hero/altai/altai-desktop@2x.webp 2x
-                    " width="1440" height="800" />
+                    " width="1440" height="800">
                 <source type="image/webp" media="(min-width: 768px)" srcset="
                       ./img/hero/altai/altai-tablet@1x.webp 1x,
                       ./img/hero/altai/altai-tablet@2x.webp 2x
-                    " width="768" height="1034" />
+                    " width="768" height="1034">
                 <source type="image/webp" srcset="
                       ./img/hero/altai/altai-mobile@1x.webp 1x,
                       ./img/hero/altai/altai-mobile@2x.webp 2x
-                    " width="320" height="568" />
+                    " width="320" height="568">
 
                 <source type="image/jpg" media="(min-width: 1440px)" srcset="
                       ./img/hero/altai/altai-desktop@1x.jpg 1x,
                       ./img/hero/altai/altai-desktop@2x.jpg 2x
-                    " width="1440" height="800" />
+                    " width="1440" height="800">
                 <source type="image/jpg" media="(min-width: 768px)" srcset="
                       ./img/hero/altai/altai-tablet@1x.jpg 1x,
                       ./img/hero/altai/altai-tablet@2x.jpg 2x
-                    " width="768" height="1034" />
+                    " width="768" height="1034">
                 <img class="hero__swiper-card-img" src="./img/hero/altai/altai-mobile@1x.jpg"
                   srcset="./img/hero/altai/altai-mobile@2x.jpg 2x" width="320" height="568" loading="lazy"
-                  alt="Захватывающие вершины Алтайского края" />
+                  alt="Захватывающие вершины Алтайского края">
               </picture>
             </div>
           </li>
@@ -223,7 +226,9 @@
                   <span class="tours__card-location-night">3 ночи</span>
                 </div>
               </div>
-              <h3 class="tours__card-title">Путешествие вокруг Эльбруса</h3>
+              <a class="tours__card-link" href="#">
+                <h3 class="tours__card-title">Путешествие вокруг Эльбруса</h3>
+              </a>
               <div class="tours__card-description">
                 <div class="tours__card-description-group">
                   <p class="tours__card-description-title">Сложность:</p>
@@ -265,7 +270,9 @@
                   <span class="tours__card-location-night">13 ночей</span>
                 </div>
               </div>
-              <h3 class="tours__card-title">Путь к подножию Белухи</h3>
+              <a class="tours__card-link" href="#">
+                <h3 class="tours__card-title">Путь к подножию Белухи</h3>
+              </a>
               <div class="tours__card-description">
                 <div class="tours__card-description-group">
                   <p class="tours__card-description-title">Сложность:</p>
@@ -307,9 +314,11 @@
                   <span class="tours__card-location-night">6 ночей</span>
                 </div>
               </div>
-              <h3 class="tours__card-title">
-                Через Фишт к Чёрному морю и обратно
-              </h3>
+              <a class="tours__card-link" href="#">
+                <h3 class="tours__card-title">
+                  Через Фишт к Чёрному морю и обратно
+                </h3>
+              </a>
               <div class="tours__card-description">
                 <div class="tours__card-description-group">
                   <p class="tours__card-description-title">Сложность:</p>
@@ -351,7 +360,9 @@
                   <span class="tours__card-location-night">10 ночей</span>
                 </div>
               </div>
-              <h3 class="tours__card-title">Восхождение Манарага</h3>
+              <a class="tours__card-link" href="#">
+                <h3 class="tours__card-title">Восхождение Манарага</h3>
+              </a>
               <div class="tours__card-description">
                 <div class="tours__card-description-group">
                   <p class="tours__card-description-title">Сложность:</p>
@@ -386,13 +397,19 @@
           </li>
         </ul>
         <button class="swiper-button-next tours__slider-button tours__slider-button-next" type="button">
+          <svg class="tours__slider-button-icon" width="14" height="9">
+            <use href="/__spritemap#sprite-arrow-right"></use>
+          </svg>
           <span class="visually-hidden">Следующий тур</span>
         </button>
         <button class="swiper-button-prev tours__slider-button tours__slider-button-prev" type="button">
+          <svg class="tours__slider-button-icon" width="14" height="9">
+            <use href="/__spritemap#sprite-arrow-right"></use>
+          </svg>
           <span class="visually-hidden">Предыдущий тур</span>
         </button>
       </div>
-      <a class="tours__show-btn">
+      <a class="tours__show-btn" href="#">
         <span class="tours__show-btn-text">Показать все туры</span>
         <svg class="tours__show-btn-icon" width="9" height="14">
           <use href="/__spritemap#sprite-arrow-more"></use>
@@ -447,10 +464,11 @@
                   <span>Александр</span>
                   <span>Прокофьев</span>
                 </h4>
-                <a class="training__card-link" href="https://vk.com/" target="_blank" tabindex="0">
+                <a class="training__card-link" href="https://vk.com/" tabindex="0">
                   <svg class="training__card-icon" width="15" height="8">
                     <use href="/__spritemap#sprite-social-vk"></use>
                   </svg>
+                  <span class="visually-hidden">Тренер во Вконтакте</span>
                 </a>
               </div>
               <p class="training__card-description">
@@ -492,10 +510,11 @@
                   <span>Светлана</span>
                   <span>Афиногенова</span>
                 </h4>
-                <a class="training__card-link" href="https://vk.com/" target="_blank" tabindex="0">
+                <a class="training__card-link" href="https://vk.com/" tabindex="0">
                   <svg class="training__card-icon" width="15" height="8">
                     <use href="/__spritemap#sprite-social-vk"></use>
                   </svg>
+                  <span class="visually-hidden">Тренер во Вконтакте</span>
                 </a>
               </div>
               <p class="training__card-description">
@@ -538,10 +557,11 @@
                   <span>Надежда</span>
                   <span>Колесниченко</span>
                 </h4>
-                <a class="training__card-link" href="https://vk.com/" target="_blank" tabindex="0">
+                <a class="training__card-link" href="https://vk.com/" tabindex="0">
                   <svg class="training__card-icon" width="15" height="8">
                     <use href="/__spritemap#sprite-social-vk"></use>
                   </svg>
+                  <span class="visually-hidden">Тренер во Вконтакте</span>
                 </a>
               </div>
               <p class="training__card-description">
@@ -576,10 +596,11 @@
                   <span>Федор</span>
                   <span>Кайгородов</span>
                 </h4>
-                <a class="training__card-link" href="https://vk.com/" target="_blank" tabindex="0">
+                <a class="training__card-link" href="https://vk.com/" tabindex="0">
                   <svg class="training__card-icon" width="15" height="8">
                     <use href="/__spritemap#sprite-social-vk"></use>
                   </svg>
+                  <span class="visually-hidden">Тренер во Вконтакте</span>
                 </a>
               </div>
               <p class="training__card-description">
@@ -594,20 +615,21 @@
                 <source type="image/webp" srcset="
                       ./img/instructor/daniel-vasnecov@1x.webp 1x,
                       ./img/instructor/daniel-vasnecov@2x.webp 2x
-                    " width="260" height="200" />
+                    " width="260" height="200">
                 <img class="training__card-img" src="./img/instructor/daniel-vasnecov@2x.jpg"
                   srcset="./img/instructor/daniel-vasnecov@2x.jpg 2x" width="260" height="200" loading="lazy"
-                  alt="Инструктор Даниэль Васнецов" />
+                  alt="Инструктор Даниэль Васнецов">
               </picture>
               <div class="training__card-title-wrapper">
                 <h4>
                   <span>Даниэль</span>
                   <span>Васнецов</span>
                 </h4>
-                <a class="training__card-link" href="https://vk.com/" target="_blank" tabindex="0">
+                <a class="training__card-link" href="https://vk.com/" tabindex="0">
                   <svg class="training__card-icon" width="15" height="8">
                     <use href="/__spritemap#sprite-social-vk"></use>
                   </svg>
+                  <span class="visually-hidden">Тренер во Вконтакте</span>
                 </a>
               </div>
               <p class="training__card-description">
@@ -617,10 +639,16 @@
             </div>
           </li>
         </ul>
-        <button class="swiper-button-prev training__slider-button training__slider-button-prev">
+        <button class="swiper-button-prev training__slider-button training__slider-button-prev" type="button">
+          <svg class="training__slider-button-icon" width="14" height="9">
+            <use href="/__spritemap#sprite-arrow-right"></use>
+          </svg>
           <span class="visually-hidden">Предыдущий тренер</span>
         </button>
-        <button class="swiper-button-next training__slider-button training__slider-button-next">
+        <button class="swiper-button-next training__slider-button training__slider-button-next" type="button">
+          <svg class="training__slider-button-icon" width="14" height="9">
+            <use href="/__spritemap#sprite-arrow-right"></use>
+          </svg>
           <span class="visually-hidden">Следующий тренер</span>
         </button>
       </div>
@@ -655,26 +683,26 @@
           <source type="image/webp" media="(min-width: 1440px)" srcset="
                 img/about/turists-desktop@1x.webp 1x,
                 img/about/turists-desktop@2x.webp 2x
-              " width="660" height="498" />
+              " width="660" height="498">
           <source type="image/webp" media="(min-width: 768px)" srcset="
                 img/about/turists-tablet@1x.webp 1x,
                 img/about/turists-tablet@2x.webp 2x
-              " width="542" height="350" />
+              " width="542" height="350">
           <source type="image/webp" srcset="
                 img/about/turists-mobile@1x.webp 1x,
                 img/about/turists-mobile@2x.webp 2x
-              " width="434" height="400" />
+              " width="434" height="400">
 
           <source type="image/png" media="(min-width: 1440px)" srcset="
                 img/about/turists-desktop@1x.png 1x,
                 img/about/turists-desktop@2x.png 2x
-              " width="660" height="498" />
+              " width="660" height="498">
           <source type="image/png" media="(min-width: 768px)" srcset="
                 img/about/turists-tablet@1x.png 1x,
                 img/about/turists-tablet@2x.png 2x
-              " width="542" height="350" />
+              " width="542" height="350">
           <img class="about__img" src="img/about/turists-mobile@1x.png" srcset="img/about/turists-mobile@2x.png 2x"
-            width="434" height="400" loading="lazy" alt="Спортивные игры" />
+            width="434" height="400" loading="lazy" alt="Спортивные игры">
         </picture>
       </div>
       <div class="about__wrapper">
@@ -682,9 +710,9 @@
         <h3>История компании</h3>
         <p>
           В далёком 2000 году мы начали заниматься туризмом — походы,
-          поездки,<br />
+          поездки,<br>
           восхождения, нам это настолько понравилось, что мы этим стали
-          жить.<br />
+          жить.<br>
           Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать
           людям удивительные места нашей страны.
         </p>
@@ -692,7 +720,7 @@
         <p>
           Подарить вам незабываемые впечатления от похода в горы. Мы берём
           на себя все организационные вопросы. При организации мы обязательно
-          учтём<br />
+          учтём<br>
           все ваши пожелания. Вам останется только наслаждаться незабываемым
           приключением в приятной компании.
         </p>
@@ -709,29 +737,29 @@
                 <source type="image/webp" media="(min-width: 1440px)" srcset="
                       img/reviews/frolov-alex-desktop@1x.webp 1x,
                       img/reviews/frolov-alex-desktop@2x.webp 2x
-                    " width="258" height="253" />
+                    " width="258" height="253">
                 <source type="image/webp" media="(min-width: 768px)" srcset="
                       img/reviews/frolov-alex-tablet@1x.webp 1x,
                       img/reviews/frolov-alex-tablet@2x.webp 2x
-                    " width="186" height="237" />
+                    " width="186" height="237">
                 <source type="image/webp" srcset="
                       img/reviews/frolov-alex-mobile@1x.webp 1x,
                       img/reviews/frolov-alex-mobile@2x.webp 2x
-                    " width="250" height="169" />
+                    " width="250" height="169">
 
                 <source type="image/jpg" media="(min-width: 1440px)" srcset="
                       img/reviews/frolov-alex-desktop@1x.jpg 1x,
                       img/reviews/frolov-alex-desktop@2x.jpg 2x
-                    " width="258" height="253" />
+                    " width="258" height="253">
                 <source type="image/jpg" media="(min-width: 768px)" srcset="
                       img/reviews/frolov-alex-tablet@1x.jpg 1x,
                       img/reviews/frolov-alex-tablet@2x.jpg 2x
-                    " width="186" height="237" />
+                    " width="186" height="237">
                 <img class="reviews__card-img" src="img/reviews/frolov-alex-mobile@1x.jpg"
                   srcset="img/reviews/frolov-alex-mobile@2x.jpg 2x" width="250" height="169" loading="lazy"
-                  alt="Фролов Александр" />
+                  alt="Фролов Александр">
               </picture>
-              <div class="previews__card-description">
+              <div class="reviews__card-description">
                 <p>
                   Осенью ходили в поход на Алтай с друзьями. Впечатления
                   потрясающие! Инструкторы, настоящие эксперты, всему научили,
@@ -754,29 +782,29 @@
                 <source type="image/webp" media="(min-width: 1440px)" srcset="
                       img/reviews/ivan-solovev-desktop@1x.webp 1x,
                       img/reviews/ivan-solovev-desktop@2x.webp 2x
-                    " width="258" height="253" />
+                    " width="258" height="253">
                 <source type="image/webp" media="(min-width: 768px)" srcset="
                       img/reviews/ivan-solovev-tablet@1x.webp 1x,
                       img/reviews/ivan-solovev-tablet@2x.webp 2x
-                    " width="186" height="237" />
+                    " width="186" height="237">
                 <source type="image/webp" srcset="
                       img/reviews/ivan-solovev-mobile@1x.webp 1x,
                       img/reviews/ivan-solovev-mobile@2x.webp 2x
-                    " width="250" height="169" />
+                    " width="250" height="169">
 
                 <source type="image/jpg" media="(min-width: 1440px)" srcset="
                       img/reviews/ivan-solovev-desktop@1x.jpg 1x,
                       img/reviews/ivan-solovev-desktop@2x.jpg 2x
-                    " width="258" height="253" />
+                    " width="258" height="253">
                 <source type="image/jpg" media="(min-width: 768px)" srcset="
                       img/reviews/ivan-solovev-tablet@1x.jpg 1x,
                       img/reviews/ivan-solovev-tablet@2x.jpg 2x
-                    " width="186" height="237" />
+                    " width="186" height="237">
                 <img class="reviews__card-img" src="img/reviews/ivan-solovev-tablet@1x.jpg"
                   srcset="img/reviews/ivan-solovev-mobile@2x.jpg 2x" width="250" height="169" loading="lazy"
-                  alt="Иван Соловьёв" />
+                  alt="Иван Соловьёв">
               </picture>
-              <div class="previews__card-description">
+              <div class="reviews__card-description">
                 <p>
                   Хороший полноценный поход с разнообразными локациями.
                   В начале дорога идёт по лыжне, далее прошли мимо полигона,
@@ -798,29 +826,29 @@
                 <source type="image/webp" media="(min-width: 1440px)" srcset="
                       img/reviews/evgenia-bagenova-desktop@1x.webp 1x,
                       img/reviews/evgenia-bagenova-desktop@2x.webp 2x
-                    " width="258" height="253" />
+                    " width="258" height="253">
                 <source type="image/webp" media="(min-width: 768px)" srcset="
                       img/reviews/evgenia-bagenova-tablet@1x.webp 1x,
                       img/reviews/evgenia-bagenova-tablet@2x.webp 2x
-                    " width="186" height="237" />
+                    " width="186" height="237">
                 <source type="image/webp" srcset="
                       img/reviews/evgenia-bagenova-mobile@1x.webp 1x,
                       img/reviews/evgenia-bagenova-mobile@2x.webp 2x
-                    " width="250" height="169" />
+                    " width="250" height="169">
 
                 <source type="image/jpg" media="(min-width: 1440px)" srcset="
                       img/reviews/evgenia-bagenova-desktop@1x.jpg 1x,
                       img/reviews/evgenia-bagenova-desktop@2x.jpg 2x
-                    " width="258" height="253" />
+                    " width="258" height="253">
                 <source type="image/jpg" media="(min-width: 768px)" srcset="
                       img/reviews/evgenia-bagenova-tablet@1x.jpg 1x,
                       img/reviews/evgenia-bagenova-tablet@2x.jpg 2x
-                    " width="186" height="237" />
+                    " width="186" height="237">
                 <img class="reviews__card-img" src="img/reviews/evgenia-bagenova-tablet@1x.jpg"
                   srcset="img/reviews/evgenia-bagenova-mobile@2x.jpg 2x" width="250" height="169" loading="lazy"
-                  alt="Евгения Баженова" />
+                  alt="Евгения Баженова">
               </picture>
-              <div class="previews__card-description">
+              <div class="reviews__card-description">
                 <p>
                   Ранее не ходила на такие длинные дистанции. В первый день
                   прошли около 30 км, физически я устала на 18 км, поэтому
@@ -842,29 +870,29 @@
                 <source type="image/webp" media="(min-width: 1440px)" srcset="
                       img/reviews/elena-pirogova-desktop@1x.webp 1x,
                       img/reviews/elena-pirogova-desktop@2x.webp 2x
-                    " width="258" height="253" />
+                    " width="258" height="253">
                 <source type="image/webp" media="(min-width: 768px)" srcset="
                       img/reviews/elena-pirogova-tablet@1x.webp 1x,
                       img/reviews/elena-pirogova-tablet@2x.webp 2x
-                    " width="186" height="237" />
+                    " width="186" height="237">
                 <source type="image/webp" srcset="
                       img/reviews/elena-pirogova-mobile@1x.webp 1x,
                       img/reviews/elena-pirogova-mobile@2x.webp 2x
-                    " width="250" height="169" />
+                    " width="250" height="169">
 
                 <source type="image/jpg" media="(min-width: 1440px)" srcset="
                       img/reviews/elena-pirogova-desktop@1x.jpg 1x,
                       img/reviews/elena-pirogova-desktop@2x.jpg 2x
-                    " width="258" height="253" />
+                    " width="258" height="253">
                 <source type="image/jpg" media="(min-width: 768px)" srcset="
                       img/reviews/elena-pirogova-tablet@1x.jpg 1x,
                       img/reviews/elena-pirogova-tablet@2x.jpg 2x
-                    " width="186" height="237" />
+                    " width="186" height="237">
                 <img class="reviews__card-img" src="img/reviews/elena-pirogova-mobile@1x.jpg"
                   srcset="img/reviews/elena-pirogova-mobile@2x.jpg 2x" width="250" height="169" loading="lazy"
-                  alt="Елена Пирогова" />
+                  alt="Елена Пирогова">
               </picture>
-              <div class="previews__card-description">
+              <div class="reviews__card-description">
                 <p>
                   Это был опыт, изменивший мою жизнь! Думала, не справлюсь,
                   но все получилось! Дух захватывает, когда наконец‑то,
@@ -882,8 +910,18 @@
             </div>
           </li>
         </ul>
-        <button class="reviews__slider-button-prev reviews__slider-button swiper-button-prev"></button>
-        <button class="reviews__slider-button-next reviews__slider-button swiper-button-next"></button>
+        <button class="reviews__slider-button-prev reviews__slider-button swiper-button-prev" type="button">
+          <svg class="reviews__slider-button-icon" width="14" height="9">
+            <use href="/__spritemap#sprite-arrow-right"></use>
+          </svg>
+          <span class="visually-hidden">Предыдущий отзыв</span>
+        </button>
+        <button class="reviews__slider-button-next reviews__slider-button swiper-button-next" type="button">
+          <svg class="reviews__slider-button-icon" width="14" height="9">
+            <use href="/__spritemap#sprite-arrow-right"></use>
+          </svg>
+          <span class="visually-hidden">Следующий отзыв</span>
+        </button>
       </div>
     </section>
 
@@ -906,7 +944,8 @@
             <div class="adv__slider-card adv__slider-card--crown">
               <h3>Экспертиза и знания</h3>
               <p>
-                Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это <br>гарантирует,
+                Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности.
+                Это <br>гарантирует,
                 что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.
               </p>
             </div>
@@ -945,19 +984,25 @@
             </div>
           </li>
         </ul>
-        <button class="adv__slider-button-prev adv__slider-button swiper-button-prev"></button>
-        <button class="adv__slider-button-next adv__slider-button swiper-button-next"></button>
+        <button class="adv__slider-button-prev adv__slider-button swiper-button-prev" type="button">
+          <svg class="adv__slider-button-icon" width="14" height="9">
+            <use href="/__spritemap#sprite-arrow-right"></use>
+          </svg>
+          <span class="visually-hidden">Предыдущее нашее преимущество</span>
+        </button>
+        <button class="adv__slider-button-next adv__slider-button swiper-button-next" type="button">
+          <svg class="adv__slider-button-icon" width="14" height="9">
+            <use href="/__spritemap#sprite-arrow-right"></use>
+          </svg>
+          <span class="visually-hidden">Предыдущee нашее преимущество</span>
+        </button>
       </div>
     </section>
 
     <section class="gallery" id="gallery" data-test="gallery">
       <div class="gallery__description">
         <h2 class="gallery__title">Фотогалерея</h2>
-        <p>
-          Добавляйте фото с хэштегом #лайфтур,<br> а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел
-          нашего
-          сайта.
-        </p>
+        <p>Добавляйте фото с хэштегом #лайфтур,<br> а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
       </div>
       <div class="gallery__slider">
         <ul class="gallery__slider-list swiper-wrapper">
@@ -1004,7 +1049,7 @@
                   srcset="./img/gallery/slide-2-tablet@1x.webp 1x, ./img/gallery/slide-2-tablet@2x.webp 2x" width="253"
                   height="209">
                 <img class="gallery__slider-img" src="./img/gallery/slide-2-mobile@1x.jpg"
-                  srcset="./img/gallery/slide-2-mobile@2x.jpg 2x" width="157" height="134.5" alt="Туристы у костра"
+                  srcset="./img/gallery/slide-2-mobile@2x.jpg 2x" width="157" height="134" alt="Туристы у костра"
                   loading="lazy">
               </picture>
               <picture>
@@ -1025,7 +1070,7 @@
                   srcset="./img/gallery/slide-3-tablet@1x.webp 1x, ./img/gallery/slide-3-tablet@2x.webp 2x" width="252"
                   height="209">
                 <img class="gallery__slider-img" src="./img/gallery/slide-3-mobile@1x.jpg"
-                  srcset="./img/gallery/slide-3-mobile@2x.jpg 2x" width="157" height="124.5" alt="Без компаса - никуда"
+                  srcset="./img/gallery/slide-3-mobile@2x.jpg 2x" width="157" height="124" alt="Без компаса - никуда"
                   loading="lazy">
               </picture>
             </div>
@@ -1123,16 +1168,24 @@
             </picture>
           </li>
         </ul>
-        <button class="gallery__slider-button-prev gallery__slider-button swiper-button-prev"></button>
-        <button class="gallery__slider-button-next gallery__slider-button swiper-button-next"></button>
+        <button class="gallery__slider-button-prev gallery__slider-button swiper-button-prev" type="button">
+          <svg class="gallery__slider-button-icon" width="14" height="9">
+            <use href="/__spritemap#sprite-arrow-right"></use>
+          </svg>
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button class="gallery__slider-button-next gallery__slider-button swiper-button-next" type="button">
+          <svg class="gallery__slider-button-icon" width="14" height="9">
+            <use href="/__spritemap#sprite-arrow-right"></use>
+          </svg>
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
       </div>
     </section>
 
     <section class="feedback" data-test="form">
       <h2 class="feedback__title">Остались вопросы?</h2>
-      <p>
-        Заполните форму и наш оператор <br> свяжется <br>с вами для консультации.
-      </p>
+      <p>Заполните форму и наш оператор <br> свяжется <br>с вами для консультации.</p>
       <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post" novalidate>
         <label class="feedback__form-label">
           <input class="feedback__form-input" type="tel" name="phone" placeholder="Телефон" required>
@@ -1159,20 +1212,20 @@
           <li class="contacts__item">
             <h3 class="contacts__item-title contacts__item-title--phone">Телефон</h3>
             <p class="contacts__item-text">
-              <a class="contacts__item-link" href="tel:+79837454545">+7 983 745-45-45</a>
+              <a class="contacts__item-link" href="tel:+79837454545"
+                aria-label="Позвоните нам по телефону 8 983 745-45-45">+7 983 745-45-45</a>
             </p>
           </li>
           <li class="contacts__item">
             <h3 class="contacts__item-title contacts__item-title--email">Email</h3>
             <p class="contacts__item-text">
-              <a class="contacts__item-link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+              <a class="contacts__item-link" href="mailto:info@lifetour.com"
+                aria-label="Напишите нам по почту по адрессу info@lifetour.com">info@lifetour.com</a>
             </p>
           </li>
           <li class="contacts__item">
             <h3 class="contacts__item-title contacts__item-title--address">Адрес</h3>
-            <p class="contacts__item-text">
-              г. Москва, пр-т Мира,<br> д. 14, офис 101
-            </p>
+            <p class="contacts__item-text">г. Москва, пр-т Мира,<br> д. 14, офис 101</p>
           </li>
         </ul>
       </div>
@@ -1205,8 +1258,9 @@
       </div>
     </section>
     <section class="page-footer__footer footer">
+      <h3 class="visually-hidden">Связь с нами</h3>
       <div class="footer__top">
-        <a href="#" class="footer__logo">
+        <a  class="footer__logo" href="#" aria-label="Логотип">
           <svg class="footer__logo-img" width="142" height="42">
             <use href="/__spritemap#sprite-logotype"></use>
           </svg>
@@ -1235,12 +1289,13 @@
             </li>
           </ul>
         </nav>
-        <a class="footer__phone" href="tel:+78007253232">8 800 725-32-32</a>
+        <a class="footer__phone" href="tel:+78007253232"
+          aria-label="Позвоните нам по телефону 8 800 725-32-32">8 800 725-32-32</a>
       </div>
       <div class="footer__bottom">
         <ul class="footer__social-list">
           <li class="footer__social-item">
-            <a href="" class="footer__social-link">
+            <a class="footer__social-link" href="#">
               <svg class="footer__social-icon" width="16" height="9" aria-hidden="true">
                 <use href="/__spritemap#sprite-social-vk"></use>
               </svg>
@@ -1248,7 +1303,7 @@
             </a>
           </li>
           <li class="footer__social-item">
-            <a href="" class="footer__social-link">
+            <a class="footer__social-link" href="#">
               <svg class="footer__social-icon" width="9" height="16" aria-hidden="true">
                 <use href="/__spritemap#sprite-social-ok"></use>
               </svg>
@@ -1256,7 +1311,7 @@
             </a>
           </li>
           <li class="footer__social-item">
-            <a href="" class="footer__social-link">
+            <a class="footer__social-link" href="#">
               <svg class="footer__social-icon" width="14" height="15" aria-hidden="true">
                 <use href="/__spritemap#sprite-social-reddit"></use>
               </svg>

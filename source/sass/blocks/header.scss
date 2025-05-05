@@ -57,6 +57,23 @@
     margin: 0;
   }
 
+  &:hover {
+    outline: 1px solid $color-white-500;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  &:focus {
+    outline: 1px solid $color-white-500;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  &:active {
+    outline: none;
+    transform: scale(1.07);
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -200,6 +217,9 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   z-index: 10;
+  border-bottom: 1px solid transparent;
+  outline: transparent;
+  transition: border-color $trans-default, outline-color $trans-default;
 
   @media (min-width: $tablet-width) {
     font-size: 1rem;
@@ -211,6 +231,26 @@
     text-transform: none;
     letter-spacing: 0;
   }
+
+  &:hover {
+    border-color: $color-white-1000;
+  }
+
+  &:focus {
+    outline: 1px solid $color-white-1000;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: $color-active;
+    outline: transparent;
+    border: transparent;
+  }
+}
+
+.header__nav-link[disabled] {
+  background-color: $color-disabled;
+  pointer-events: none;
 }
 
 .header__logo {
@@ -231,6 +271,23 @@
     justify-content: center;
     align-items: center;
   }
+
+    &:hover {
+    outline: 1px solid $color-white-500;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  &:focus {
+    outline: 1px solid $color-white-500;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  &:active {
+    outline: none;
+    transform: scale(1.07);
+  }
 }
 
 .header__logo-img {
@@ -246,6 +303,7 @@
   text-decoration: none;
   text-align: right;
   grid-column: 2/3;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     grid-column: 3/4;
@@ -262,4 +320,21 @@
     order: 3;
     transform: translateY(1px);
   }
+
+  &:hover {
+    color: $color-white-500;
+  }
+
+  &:focus {
+    color: $color-primary;
+  }
+
+  &:active {
+    color: $color-active;
+  }
+}
+
+.header__phone[disabled] {
+  background-color: $color-disabled;
+  pointer-events: none;
 }

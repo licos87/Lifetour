@@ -32,7 +32,7 @@
     padding: 296px 330px 292px;
     gap: 20px;
 
-        background-image: image-set(
+    background-image: image-set(
       url("../../img/form/form-desktop@1x.webp") type("image/webp") 1x,
       url("../../img/form/form-desktop@2x.webp") type("image/webp") 2x,
       url("../../img/form/form-desktop@1x.jpg") type("image/jpg") 1x,
@@ -124,6 +124,19 @@
     display: flex;
     min-width: 360px;
   }
+
+  &:hover {
+    border-color: $color-additional-1000
+  }
+
+  &:focus {
+    border-color: $color-primary;
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+    pointer-events: none;
+  }
 }
 
 .feedback__form-btn {
@@ -134,6 +147,7 @@
   color: $color-white-1000;
   background-color: $color-additional-1000;
   border: transparent;
+  transition: color $trans-default, background-color $trans-default;
 
   @media (min-width: $tablet-width) {
     min-width: 180px;
@@ -143,5 +157,26 @@
 
   @media (min-width: $desktop-width) {
     padding: 19px 19px 18px;
+  }
+
+  &:hover {
+    color: $color-active;
+    background-color: $color-white-1000;
+  }
+
+  &:focus {
+    color: $color-active;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  &:active {
+    color: $color-white-1000;
+    background-color: $color-active;
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+    pointer-events: none;
   }
 }

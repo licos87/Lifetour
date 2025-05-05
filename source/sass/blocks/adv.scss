@@ -248,28 +248,65 @@
   top: calc(95% + 4px);
   width: 37px;
   height: 35px;
+  justify-content: center;
+  align-items: center;
   background-color: $color-additional-1000;
-  border: none;
+  border: 1px solid transparent;
+  outline: none;
+  transition: color $trans-default, background-color $trans-default,
+    fill $trans-default, border-color $trans-default;
 
   @media (min-width: $desktop-width) {
-    display: block;
+    display: flex;
     top: calc(84% + 4px);
   }
+
+  &:hover {
+    background-color: $color-white-1000;
+    border-color: $color-active;
+  }
+
+  &:hover svg {
+    fill: $color-active;
+  }
+
+  &:focus {
+    color: $color-active;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  &:focus svg {
+    fill: $color-active;
+  }
+
+  &:active {
+    color: $color-white-1000;
+    background-color: $color-active;
+  }
+
+  &:active svg {
+    fill: $color-white-1000;
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+    pointer-events: none;
+  }
+}
+
+.adv__slider .adv__slider-button-icon {
+  fill: $color-white-1000;
+  width: 14px;
+  height: 9px;
 }
 
 .adv__slider-button-prev {
   left: calc(50% - 39px);
+  transform: rotate(180deg);
 
   &::after {
     content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 37px;
-    height: 35px;
-    background: url("/__spritemap#sprite-arrow-right-view") no-repeat center;
-    transform: rotate(180deg);
-    background-size: 14px 9px;
   }
 }
 
@@ -278,13 +315,6 @@
 
   &::after {
     content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 37px;
-    height: 35px;
-    background: url("/__spritemap#sprite-arrow-right-view") no-repeat center;
-    background-size: 14px 9px;
   }
 }
 

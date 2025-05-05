@@ -52,6 +52,23 @@
   @media (min-width: $desktop-width) {
     justify-content: center;
   }
+
+  &:hover {
+    outline: 1px solid $color-additional-1000;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  &:focus {
+    outline: 1px solid $color-primary;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  &:active {
+    outline: none;
+    transform: scale(1.07);
+  }
 }
 
 .footer__nav {
@@ -113,10 +130,32 @@
   line-height: 1em;
   color: $color-primary;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
   }
+
+  &:hover {
+    border-color: $color-primary;
+  }
+
+  &:focus {
+    border-color: transparent;
+    outline: 1px solid $color-primary;
+  }
+
+  &:active {
+    color: $color-additional-1000;
+    background-color: transparent;
+    outline: transparent;
+  }
+}
+
+.footer__nav-link[disabled] {
+  color: $color-disabled;
+  border-color: transparent;
+  pointer-events: none;
 }
 
 .footer__phone {
@@ -126,6 +165,7 @@
   font-weight: 600;
   color: $color-primary;
   text-decoration: none;
+  outline: none;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -136,6 +176,23 @@
   @media (min-width: $desktop-width) {
     padding: 3px 0 0;
   }
+
+  &:hover {
+    color: $color-additional-200;
+  }
+
+  &:focus {
+    color: $color-additional-1000;
+  }
+
+  &:active {
+    color: $color-active;
+  }
+}
+
+.footer__phone[disabled] {
+  color: $color-disabled;
+  pointer-events: none;
 }
 
 .footer__bottom {
@@ -177,6 +234,34 @@
   width: 32px;
   height: 30px;
   border: 1px solid rgba(45, 56, 63, 0.3);
+  transition: border-color $trans-default, background-color $trans-default;
+
+  &:hover {
+    border-color: $color-primary;
+  }
+
+  &:focus {
+    border-color: transparent;
+  }
+
+  &:active {
+    background-color: $color-additional-1000;
+  }
+}
+
+.footer__social-link[disabled] {
+  opacity: 0.3;
+  border-color: $color-primary;
+  pointer-events: none;
+}
+
+.footer__social-link svg {
+  fill: $color-primary;
+}
+
+.footer__social-link:active svg {
+  fill: $color-white-1000;
+  transition: fill $trans-default;
 }
 
 .footer__copyright-text {
@@ -186,4 +271,26 @@
   font-weight: 300;
   color: $color-primary;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-color: $color-primary;
+  }
+
+  &:focus {
+    border-color: transparent;
+    outline: 1px solid $color-primary;
+  }
+
+  &:active {
+    color: $color-additional-1000;
+    background-color: transparent;
+    outline: transparent;
+  }
+}
+
+.footer__copyright-link[disabled] {
+  color: $color-disabled;
+  border-color: transparent;
+  pointer-events: none;
 }

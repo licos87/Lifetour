@@ -13,11 +13,9 @@ const reviewsSlider = new Swiper('.reviews__slider', {
   breakpoints: {
     768: {
       spaceBetween: 30,
-      allowTouchMove: true,
     },
     1440: {
       spaceBetween: 120,
-      allowTouchMove: false,
     }
   },
   navigation: {
