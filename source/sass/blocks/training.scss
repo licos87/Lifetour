@@ -124,8 +124,11 @@
   background-color: $color-additional-1000;
   border: 1px solid transparent;
   outline: none;
-  transition: color $trans-default, background-color $trans-default,
-    fill $trans-default, border-color $trans-default;
+  transition:
+    color $trans-default,
+    background-color $trans-default,
+    fill $trans-default,
+    border-color $trans-default;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -218,7 +221,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 388px;
-    padding: 14px 14px;
+    padding: 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -264,7 +267,7 @@
   padding: 7px 4px 7px 3px;
   border: 1px solid rgba(45, 56, 63, 0.3);
 
-    &:hover {
+  &:hover {
     border-color: $color-primary;
   }
 
@@ -462,7 +465,7 @@
 
 .training__text--boots {
   &::after {
-    background: url("/__spritemap#sprite-boots-view") no-repeat center;
+    background: url("/__spritemap#sprite-boots-training-view") no-repeat center;
   }
 }
 

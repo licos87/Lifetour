@@ -46,7 +46,7 @@
   opacity: 0.03;
 
   @media (min-width: $tablet-width) {
-    bottom: 0px;
+    bottom: 0;
     left: calc(50% - 167px);
     font-size: 2.5rem;
   }
@@ -134,10 +134,12 @@
     width: 380px;
     min-height: 329px;
     padding: 122px 18px 29px;
+  }
+}
 
-    & br {
-      display: none;
-    }
+.adv__slider-card br {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -253,8 +255,11 @@
   background-color: $color-additional-1000;
   border: 1px solid transparent;
   outline: none;
-  transition: color $trans-default, background-color $trans-default,
-    fill $trans-default, border-color $trans-default;
+  transition:
+    color $trans-default,
+    background-color $trans-default,
+    fill $trans-default,
+    border-color $trans-default;
 
   @media (min-width: $desktop-width) {
     display: flex;

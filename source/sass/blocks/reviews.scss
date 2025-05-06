@@ -53,7 +53,7 @@
 
   @media (min-width: $desktop-width) {
     bottom: 19px;
-    left: 0px;
+    left: 0;
     font-size: 3.45rem;
     letter-spacing: 0.9px;
   }
@@ -139,10 +139,13 @@
   width: 37px;
   height: 35px;
   background-color: $color-additional-1000;
-    border: 1px solid transparent;
+  border: 1px solid transparent;
   outline: none;
-  transition: color $trans-default, background-color $trans-default,
-    fill $trans-default, border-color $trans-default;
+  transition:
+    color $trans-default,
+    background-color $trans-default,
+    fill $trans-default,
+    border-color $trans-default;
 
   @media (min-width: $tablet-width) {
     display: flex;

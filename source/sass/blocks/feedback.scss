@@ -6,12 +6,13 @@
   justify-content: center;
   gap: 20px;
 
-  background-image: image-set(
-    url("../../img/form/form-mobile@1x.webp") type("image/webp") 1x,
-    url("../../img/form/form-mobile@2x.webp") type("image/webp") 2x,
-    url("../../img/form/form-mobile@1x.jpg") type("image/jpg") 1x,
-    url("../../img/form/form-mobile@2x.jpg") type("image/jpg") 2x
-  );
+  background-image:
+    image-set(
+      url("../../img/form/form-mobile@1x.webp") type("image/webp") 1x,
+      url("../../img/form/form-mobile@2x.webp") type("image/webp") 2x,
+      url("../../img/form/form-mobile@1x.jpg") type("image/jpg") 1x,
+      url("../../img/form/form-mobile@2x.jpg") type("image/jpg") 2x
+    );
 
   background-position: center;
   background-repeat: no-repeat;
@@ -20,24 +21,26 @@
   @media (min-width: $tablet-width) {
     padding: 187px 204px 183px;
     gap: 25px;
-    background-image: image-set(
-      url("../../img/form/form-tablet@1x.webp") type("image/webp") 1x,
-      url("../../img/form/form-tablet@2x.webp") type("image/webp") 2x,
-      url("../../img/form/form-tablet@1x.jpg") type("image/jpg") 1x,
-      url("../../img/form/form-tablet@2x.jpg") type("image/jpg") 2x
-    );
+    background-image:
+      image-set(
+        url("../../img/form/form-tablet@1x.webp") type("image/webp") 1x,
+        url("../../img/form/form-tablet@2x.webp") type("image/webp") 2x,
+        url("../../img/form/form-tablet@1x.jpg") type("image/jpg") 1x,
+        url("../../img/form/form-tablet@2x.jpg") type("image/jpg") 2x
+      );
   }
 
   @media (min-width: $desktop-width) {
     padding: 296px 330px 292px;
     gap: 20px;
 
-    background-image: image-set(
-      url("../../img/form/form-desktop@1x.webp") type("image/webp") 1x,
-      url("../../img/form/form-desktop@2x.webp") type("image/webp") 2x,
-      url("../../img/form/form-desktop@1x.jpg") type("image/jpg") 1x,
-      url("../../img/form/form-desktop@2x.jpg") type("image/jpg") 2x
-    );
+    background-image:
+      image-set(
+        url("../../img/form/form-desktop@1x.webp") type("image/webp") 1x,
+        url("../../img/form/form-desktop@2x.webp") type("image/webp") 2x,
+        url("../../img/form/form-desktop@1x.jpg") type("image/jpg") 1x,
+        url("../../img/form/form-desktop@2x.jpg") type("image/jpg") 2x
+      );
   }
 }
 
@@ -126,7 +129,7 @@
   }
 
   &:hover {
-    border-color: $color-additional-1000
+    border-color: $color-additional-1000;
   }
 
   &:focus {

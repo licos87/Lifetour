@@ -3,7 +3,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;
-    padding: 123px 120px 39px 120px;
+    padding: 123px 120px 39px;
     display: flex;
     align-self: center;
     justify-content: center;
@@ -39,6 +39,7 @@
 
   @media (min-width: $desktop-width) {
     width: 600px;
+
     // padding: 123px 120px 39px 120px;
     padding: 0;
   }

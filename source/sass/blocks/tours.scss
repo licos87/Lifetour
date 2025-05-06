@@ -7,12 +7,13 @@
   flex-direction: column;
   align-items: center;
 
-  background: image-set(
-    url("../../img/main/clouds-mounts-mobile@1x.webp") type("image/webp") 1x,
-    url("../../img/main/clouds-mounts-mobile@2x.webp") type("image/webp") 2x,
-    url("../../img/main/clouds-mounts-mobile@1x.png") type("image/jpg") 1x,
-    url("../../img/main/clouds-mounts-mobile@2x.png") type("image/jpg") 2x
-  );
+  background:
+    image-set(
+      url("../../img/main/clouds-mounts-mobile@1x.webp") type("image/webp") 1x,
+      url("../../img/main/clouds-mounts-mobile@2x.webp") type("image/webp") 2x,
+      url("../../img/main/clouds-mounts-mobile@1x.png") type("image/jpg") 1x,
+      url("../../img/main/clouds-mounts-mobile@2x.png") type("image/jpg") 2x
+    );
 
   background-position: center bottom -100px;
 
@@ -103,8 +104,11 @@
   background-color: $color-additional-1000;
   border: 1px solid transparent;
   outline: none;
-  transition: color $trans-default, background-color $trans-default,
-    fill $trans-default, border-color $trans-default;
+  transition:
+    color $trans-default,
+    background-color $trans-default,
+    fill $trans-default,
+    border-color $trans-default;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -194,10 +198,11 @@
   line-height: 1em;
   font-weight: 700;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
   cursor: pointer;
   text-transform: uppercase;
   transform: translateX(1px);
+  text-decoration: none;
+  color: $color-primary;
 
   @media (min-width: $tablet-width) {
     font-size: 1rem;
@@ -235,8 +240,8 @@
 .tours__show-btn[disabled] {
   color: $color-disabled;
   pointer-events: none;
+}
 
-  & svg {
-    stroke: $color-disabled;
-  }
+.tours__show-btn[disabled] svg {
+  stroke: $color-disabled;
 }

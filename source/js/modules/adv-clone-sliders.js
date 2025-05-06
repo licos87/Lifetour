@@ -21,4 +21,3 @@ function cloneSliders() {
 }
 
 breakpoint.addEventListener('change', cloneSliders);
-

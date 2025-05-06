@@ -22,12 +22,13 @@
         <span class="visually-hidden">Открыть меню</span>
         <span class="header__burger-btn-span"></span>
       </button>
-      <a class="header__logo" href="#" tabindex="0" aria-label="Логотип">
+      <a class="header__logo" href="#" tabindex="0">
         <svg class="header__logo-img" width="142" height="42">
           <use href="/__spritemap#sprite-logotype"></use>
         </svg>
+        <span class="visually-hidden">Логотип</span>
       </a>
-      <nav class="header__nav">
+      <nav class="header__nav" aria-label="Навигация по сайту">
         <ul class="header__nav-list">
           <li class="header__nav-item">
             <a class="header__nav-link" href="#tours" tabindex="0">Туры</a>
@@ -1002,7 +1003,8 @@
     <section class="gallery" id="gallery" data-test="gallery">
       <div class="gallery__description">
         <h2 class="gallery__title">Фотогалерея</h2>
-        <p>Добавляйте фото с хэштегом #лайфтур,<br> а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
+        <p>Добавляйте фото с хэштегом #лайфтур,<br> а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел
+          нашего сайта.</p>
       </div>
       <div class="gallery__slider">
         <ul class="gallery__slider-list swiper-wrapper">
@@ -1189,9 +1191,11 @@
       <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post" novalidate>
         <label class="feedback__form-label">
           <input class="feedback__form-input" type="tel" name="phone" placeholder="Телефон" required>
+          <span class="visually-hidden">Номер телефона</span>
         </label>
         <label class="feedback__form-label">
           <input class="feedback__form-input" type="email" name="email" placeholder="Email" required>
+          <span class="visually-hidden">Адресс почтового ящика</span>
         </label>
         <button class="feedback__form-btn" type="submit">Отправить</button>
       </form>
@@ -1260,12 +1264,13 @@
     <section class="page-footer__footer footer">
       <h3 class="visually-hidden">Связь с нами</h3>
       <div class="footer__top">
-        <a  class="footer__logo" href="#" aria-label="Логотип">
+        <a class="footer__logo" href="#">
           <svg class="footer__logo-img" width="142" height="42">
             <use href="/__spritemap#sprite-logotype"></use>
           </svg>
+          <span class="visually-hidden">Логотип</span>
         </a>
-        <nav class="footer__nav">
+        <nav class="footer__nav" aria-label="Навигация">
           <ul class="footer__nav-list footer__nav-list--left">
             <li class="footer__nav-item">
               <a class="footer__nav-link" href="#tours">Туры</a>

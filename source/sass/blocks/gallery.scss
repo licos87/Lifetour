@@ -59,12 +59,12 @@
   opacity: 0.03;
 
   @media (min-width: $tablet-width) {
-    bottom: 0px;
+    bottom: 0;
     font-size: 2.5rem;
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 0px;
+    bottom: 0;
     font-size: 3.5rem;
     letter-spacing: 0;
   }
@@ -131,7 +131,8 @@
   @media (min-width: $desktop-width) {
     height: 463px;
     display: grid;
-    grid-template-columns: minmax(284px, 463px) minmax(284px, 319px) minmax(
+    grid-template-columns:
+      minmax(284px, 463px) minmax(284px, 319px) minmax(
         284px,
         463px
       ) minmax(284px, 319px) minmax(284px, 463px);
@@ -160,9 +161,6 @@
   margin: 0 auto;
   height: 100%;
   overflow: hidden;
-
-  @media (min-width: $tablet-width) {
-  }
 }
 
 .gallery__slider-img {
@@ -170,9 +168,6 @@
   width: 100%;
   object-fit: cover;
   height: 100%;
-
-  @media (min-width: $tablet-width) {
-  }
 }
 
 .gallery__slider .gallery__slider-button {
@@ -183,8 +178,11 @@
   background-color: $color-additional-1000;
   border: 1px solid transparent;
   outline: none;
-  transition: color $trans-default, background-color $trans-default,
-    fill $trans-default, border-color $trans-default;
+  transition:
+    color $trans-default,
+    background-color $trans-default,
+    fill $trans-default,
+    border-color $trans-default;
 
   @media (min-width: $tablet-width) {
     display: flex;

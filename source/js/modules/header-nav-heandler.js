@@ -21,4 +21,3 @@ function navMenuHandler(e) {
 }
 
 navBtn.addEventListener('click', (e) => navMenuHandler(e));
-
